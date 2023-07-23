@@ -1,14 +1,14 @@
 
 # NOTAM Scraper for Slovenia
 
-This Python script scrapes the NOTAM (Notice to Airmen) data from the website of [Slovenia Control](https://www.sloveniacontrol.si/Strani/Summary-C.aspx) and extracts relevant information like NOTAM number, Q-codes, altitudes, timestamps, and KML links. It converts altitude values from feet to meters and organizes the data based on the start and end dates of the NOTAMs. Scripts ending with _G will hiding NOTAMS which are not important for paragliding and hangliding pilots.
+This Python script scrapes the NOTAM (Notice to Airmen) data from the website of [Slovenia Control](https://www.sloveniacontrol.si/Strani/Summary-C.aspx) and extracts relevant information like NOTAM number, Q-codes, altitudes, timestamps, and KML links. It converts altitude values from feet to meters and organizes the data based on the start and end dates of the NOTAMs. Scripts ending with _G will hide NOTAMS which are not important for paragliding and hang gliding pilots.
 
 ## Features
 
 - Scrapes NOTAM data from the Slovenia Control website.
 - Converts altitude values in F) and G) sections from feet to meters but showing both values
 - Filters NOTAMs for the current day and presents the data in a structured format.
-- Provides KML links for each NOTAM, allowing visualization on a map.
+- Provides KML links for each NOTAM, allowing visualization on in external app like [google earth](https://www.google.com/earth/about/versions/).
 
 ## How it works
 

@@ -110,10 +110,16 @@ else:
                 flight_level = int(f_data.split('FL')[1].strip())  # Split on 'FL' and take the second part
                 feet = flight_level * 100  # Convert flight level to feet
                 f_meters = feet_to_meters(feet)  # Convert feet to meters
+                if f_meters > 4000:  # Check if the altitude is more than 4000m
+                    skip_notam = True  # Set the flag to skip the NOTAM
+                    break  # Exit the inner loop
                 f_data = f"{f_data} ({f_meters} m)"  # Append the converted value to the F) data
             elif 'FT' in f_data and '(' not in f_data: 
                 feet = int(re.search(r'\d+', f_data).group())  # Extract the numeric part of the F) data
                 f_meters = feet_to_meters(feet)  # Convert feet to meters
+                if f_meters > 4000:  # Check if the altitude is more than 4000m
+                    skip_notam = True  # Set the flag to skip the NOTAM
+                    break  # Exit the inner loop
                 f_data = f"{f_data} ({f_meters} m)"  # Append the converted value to the F) data
 
             # Do the same for G) data
