@@ -1,8 +1,33 @@
+# Copyright (c) [2023] [StellarStoic on Github]
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import pytz
 import re
+import os
+import json
+
+SAVE_JSON_FILES = False  # Set to False if you don't want to save NOTAMS in JSON files
 
 # Function to convert feet to meters
 def feet_to_meters(feet):
@@ -110,14 +135,14 @@ else:
                 flight_level = int(f_data.split('FL')[1].strip())  # Split on 'FL' and take the second part
                 feet = flight_level * 100  # Convert flight level to feet
                 f_meters = feet_to_meters(feet)  # Convert feet to meters
-                if f_meters > 4000:  # Check if the altitude is more than 4000m
+                if f_meters > 3000:  # Check if the altitude is more than 3000m
                     skip_notam = True  # Set the flag to skip the NOTAM
                     break  # Exit the inner loop
                 f_data = f"{f_data} ({f_meters} m)"  # Append the converted value to the F) data
             elif 'FT' in f_data and '(' not in f_data: 
                 feet = int(re.search(r'\d+', f_data).group())  # Extract the numeric part of the F) data
                 f_meters = feet_to_meters(feet)  # Convert feet to meters
-                if f_meters > 4000:  # Check if the altitude is more than 4000m
+                if f_meters > 3000:  # Check if the altitude is more than 3000m
                     skip_notam = True  # Set the flag to skip the NOTAM
                     break  # Exit the inner loop
                 f_data = f"{f_data} ({f_meters} m)"  # Append the converted value to the F) data
@@ -164,6 +189,36 @@ else:
 
         # Store the data in a tuple
         notam_data_tuple = (notam_number, q_data, a_data, b_data, c_data, d_data, e_data, f_data, g_data, timestamp, kml_link)
+        
+        # Function to save NOTAM data to a JSON file
+        def save_notam_to_json(notam_data_tuple):
+            # Create a directory to store NOTAM JSON files if it doesn't exist
+            directory = "JSONs"
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            
+            # Define the JSON file name based on the NOTAM ID
+            notam_id = notam_data_tuple[0].replace("/", "-")  # Replace forward slash with hyphen
+            json_file = os.path.join(directory, f"{notam_id}.json")
+            
+            # Create a dictionary for the NOTAM
+            notam_dict = {
+                "NOTAM_ID": notam_data_tuple[0],
+                "Q_Code": notam_data_tuple[1],
+                "Location": notam_data_tuple[2],
+                "none": notam_data_tuple[3],
+                "none": notam_data_tuple[4],
+                "Day_Time": notam_data_tuple[5],
+                "Description": notam_data_tuple[6],
+                "Lower_Altitude": notam_data_tuple[7],
+                "Upper_Altitude": notam_data_tuple[8],
+                "Published_timestamp": notam_data_tuple[9],
+                "KML_Link": notam_data_tuple[10]
+            }            
+            # Write the NOTAM data to the JSON file
+            with open(json_file, "w") as f:
+                json.dump(notam_dict, f, ensure_ascii=False, indent=4)
+
 
         # Loop through the NOTAM details and find the start and end dates
         for detail in notam_details:
@@ -184,7 +239,7 @@ else:
                 if date_pattern.match(end_date_str):  # Check if the date string matches the pattern
                     try:
                         if end_date_str == 'PERM':
-                            end_date = start_date + timedelta(hours=48)
+                            end_date = start_date + timedelta(hours=1000)
                         else:
                             # Handle "EST" abbreviation in the end date
                             if "EST" in end_date_str:
@@ -240,5 +295,10 @@ else:
                 if timestamp:
                     print(f"Čas objave: {timestamp}")
                 print(f"KML File: {kml_link}")
+                
+                # Save the NOTAM data to a JSON file
+                if SAVE_JSON_FILES:
+                    save_notam_to_json(notam_data_tuple) 
+
         else:
             print("No NOTAMs. Yay!")
