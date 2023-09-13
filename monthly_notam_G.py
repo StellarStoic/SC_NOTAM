@@ -160,7 +160,27 @@ else:
                 timestamp_str = timestamp_element.get_text().split(': ')[1].strip()
 
                 # Define multiple timestamp formats because sometimes the sloveniacontrol curators uses space between dots in a date 
-                timestamp_formats = ["%d. %m. %Y %H:%M:%S", "%d.%m.%Y %H:%M:%S", "%d. %m.%Y %H:%M:%S", "%d.%m. %Y %H:%M:%S"]
+                timestamp_formats = [
+                    "%d. %m. %Y %H:%M:%S",  # Standard format with spaces between day, month, and year
+                    "%d.%m.%Y %H:%M:%S",    # Standard format without spaces between day, month, and year
+                    "%d. %m.%Y %H:%M:%S",   # Space only after the first dot in the date
+                    "%d.%m. %Y %H:%M:%S",    # Space only after the second dot in the date
+                    "%d. %m. %Y %H:%M:%S",  # standard with spaces
+                    "%d.%m.%Y %H:%M:%S",    # standard without spaces
+                    "%d. %m.%Y %H:%M:%S",   # space only after first dot
+                    "%d.%m. %Y %H:%M:%S",   # space only after second dot
+                    "%d. %m. %Y %H: %M: %S", # extra spaces around colons
+                    "%d.%m.%Y %H: %M: %S",  # extra spaces around colons, no spaces around dots
+                    "%d. %m. %Y %H :%M :%S", # extra spaces before colons
+                    "%d.%m.%Y %H :%M :%S",  # extra spaces before colons, no spaces around dots
+                    "%d.%m.%Y %H: %M :%S",  # inconsistent spaces around colons
+                    "%d.%m.%Y % H:% M:% S", # spaces within time fields
+                    "%-d. %-m. %Y %-H:%-M:%-S",  # no leading zeros
+                    "%-d.%-m.%Y %-H:%-M:%-S",    # no leading zeros, no spaces around dots
+                    "%-d. %-m.%Y %-H:%-M:%-S",   # no leading zeros, space only after first dot
+                    "%-d.%-m. %Y %-H:%-M:%-S",   # no leading zeros, space only after second dot
+                    " %d. %m. %Y %H:%M:%S "     # extra spaces around entire string
+                    ]
 
                 timestamp = None
 
