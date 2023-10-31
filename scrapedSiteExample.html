@@ -1,0 +1,2469 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="sl-SI">
+<head><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet" /><meta name="GENERATOR" content="Microsoft SharePoint" /><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=10"/><script type='text/javascript'>var _browserisFlight = true;</script><meta http-equiv="Expires" content="0" /><meta name="msapplication-TileImage" content="/_layouts/15/images/SharePointMetroAppTile.png" /><meta name="msapplication-TileColor" content="#0072C6" /><title>
+	
+    Summary C
+
+</title><link rel="shortcut icon" href="/_layouts/15/images/favicon.ico?rev=43" type="image/vnd.microsoft.icon" id="favicon" /><link id="CssLink-21753e2801fc4eaba91b99df2589100f" rel="stylesheet" type="text/css" href="/_layouts/15/1060/styles/Themable/corev15.css?rev=saxG34a%2BIbfMY6Yvosg5Gg%3D%3DTAG0"/>
+<link id="CssLink-2a0c596c428c4179a9ab4b0de3029514" rel="stylesheet" type="text/css" href="/Style%20Library/AIP/CSS/portal.css"/>
+<link id="CssLink-63c70311f716407b8029783734b6f9f3" rel="stylesheet" type="text/css" href="/_layouts/15/1060/styles/SuiteNav.css?rev=HjY5%2Fx6KOUvFQ%2F1uCj8NSg%3D%3DTAG0"/>
+<link id="CssLink-2da4e22704034ddf927b55644eabb8f3" rel="stylesheet" type="text/css" href="/Style%20Library/AIP/CSS/portal.css?v=201006135735"/>
+<style id="SPThemeHideForms" type="text/css">body {opacity:0 !important}</style><script type="text/javascript">// <![CDATA[ 
+
+var g_SPOffSwitches={};
+// ]]>
+</script>
+<script type="text/javascript" src="/_layouts/15/1060/initstrings.js?rev=1Y9d4dEwFSWJpOFhjTgx9g%3D%3DTAG0"></script>
+<script type="text/javascript" src="/_layouts/15/init.js?rev=LFYnDHcXwYtX17nOpS%2FoGg%3D%3DTAG0"></script>
+<script type="text/javascript" src="/_layouts/15/portal.js?rev=kBNscfvyPjyO12NNDa1AAA%3D%3DTAG0"></script>
+<script type="text/javascript" src="/_layouts/15/theming.js?rev=SuLUbbwTXcxFWOWLFUsOkw%3D%3DTAG0"></script>
+<script type="text/javascript" src="/Style%20Library/AIP/Scripts/ip-external.js?v=201006135734"></script>
+<script type="text/javascript" src="/Style%20Library/AIP/Scripts/portal.js?v=201006135735"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=h64B67H1YBG8_iApz1yXe35_wLJWCQm4lV-RlPEZO-KpuiPUAULXTslLP6xIObi-ThTPH9cLciGMEfUC7FRnQbKm8ao6E4ToyILe9Mnbrnqld1H4m4jX9-Atjiw_rdzIvPGgFT5IrWAvMb4C8ArYWtmiAbjQ_3MDGgCnAjwZlICaE2a2fBdJKDdnyrHwRib20&amp;t=ffffffffecf19baa"></script>
+<script type="text/javascript" src="/_layouts/15/blank.js?rev=OHvLonmRUM9Bseamss0TPA%3D%3DTAG0"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=4VRfvZJvTNE5iuc4CBBamzsfJuGSuGosH9HJ6_-vq-cn0kx_8s6ieXCqZw-RzuHoEmFUEr4_7MnG_IxSHoX74FcfqfQGUFbMQdxq6wZDdIi9W1Ra_t2iyeJ4kicRYTbwRcQJ7xQu1Y9xmU-Fp6lPnqEkkx1igfEoUsOhIoIq7QEDq2ArvO39Qr_HDka6fqlY0&amp;t=ffffffffecf19baa"></script>
+<script type="text/javascript" src="/_layouts/15/suitenav.js?rev=zbS6%2F6aqmFh1hjkWnu3weQ%3D%3DTAG0"></script>
+<script type="text/javascript">RegisterSod("require.js", "\u002f_layouts\u002f15\u002frequire.js?rev=bv3fWJhk0uFGpVwBxnZKNQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("strings.js", "\u002f_layouts\u002f15\u002f1060\u002fstrings.js?rev=Y43PVSsfSA8r6IwwJOJN3g\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002f15\u002f1060\u002fsp.res.js?rev=LjcSOMr7InR6b4GwCAth1w\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002f15\u002fsp.runtime.js?rev=xXLZbZUxSQTakKc9Rgt64A\u00253D\u00253DTAG0");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002f15\u002fsp.js?rev=zrQtJuMTc\u00252FUYhGURSSvQaw\u00253D\u00253DTAG0");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.init.js", "\u002f_layouts\u002f15\u002fsp.init.js?rev=tQBBuU3D8fSpIXGXoTPrSA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002f15\u002fsp.ui.dialog.js?rev=YaisqrHinZwW3woyeFj\u00252BJg\u00253D\u00253DTAG0");RegisterSodDep("sp.ui.dialog.js", "sp.init.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f15\u002fcore.js?rev=r6CZbpP5J8v0F6oUc9zwgQ\u00253D\u00253DTAG0");RegisterSodDep("core.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("menu.js", "\u002f_layouts\u002f15\u002fmenu.js?rev=bufqe4YDY\u00252BvoEXXovnJ4rw\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("mQuery.js", "\u002f_layouts\u002f15\u002fmquery.js?rev=bKS2ZbYkw\u00252BWn9IMJ60Dm9A\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("callout.js", "\u002f_layouts\u002f15\u002fcallout.js?rev=eX5NgeSbMQWXhxtPaj\u00252B83A\u00253D\u00253DTAG0");RegisterSodDep("callout.js", "strings.js");RegisterSodDep("callout.js", "mQuery.js");RegisterSodDep("callout.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "\u002f_layouts\u002f15\u002fsp.core.js?rev=JJnriMn7WuUH\u00252Fv93YV8ysA\u00253D\u00253DTAG0");RegisterSodDep("sp.core.js", "strings.js");RegisterSodDep("sp.core.js", "sp.init.js");RegisterSodDep("sp.core.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sharedhovercard.strings.js", "\u002f_layouts\u002f15\u002f1060\u002fsharedhovercard.strings.js?rev=iH5Cc5O\u00252F6QA7GHIGd\u00252FA01g\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sharedhovercard.js", "\u002f_layouts\u002f15\u002fsharedhovercard.js?rev=uB89up9szoXj8bAMKPkPSg\u00253D\u00253DTAG0");RegisterSodDep("sharedhovercard.js", "sharedhovercard.strings.js");</script>
+<script type="text/javascript">RegisterSod("clienttemplates.js", "\u002f_layouts\u002f15\u002fclienttemplates.js?rev=RrU15L0zeQO7hqgSeBRsdQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sharing.js", "\u002f_layouts\u002f15\u002fsharing.js?rev=EHnEU2THMFTnY0Ve4J\u00252Buiw\u00253D\u00253DTAG0");RegisterSodDep("sharing.js", "strings.js");RegisterSodDep("sharing.js", "mQuery.js");RegisterSodDep("sharing.js", "clienttemplates.js");RegisterSodDep("sharing.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("suitelinks.js", "\u002f_layouts\u002f15\u002fsuitelinks.js?rev=uO64YCQKEOJ7clpLaRAcbQ\u00253D\u00253DTAG0");RegisterSodDep("suitelinks.js", "strings.js");RegisterSodDep("suitelinks.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("clientrenderer.js", "\u002f_layouts\u002f15\u002fclientrenderer.js?rev=o57alCq40tBYkmK5kPXAoA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("srch.resources.resx", "\u002f_layouts\u002f15\u002f1060\u002fsrch.resources.js?rev=o7ZHR9Bm3yInL2D\u00252F0NV3KQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("search.clientcontrols.js", "\u002f_layouts\u002f15\u002fsearch.clientcontrols.js?rev=MJMBa0IkR5MyVZTVrcK\u00252FmQ\u00253D\u00253DTAG0");RegisterSodDep("search.clientcontrols.js", "sp.init.js");RegisterSodDep("search.clientcontrols.js", "clientrenderer.js");RegisterSodDep("search.clientcontrols.js", "srch.resources.resx");</script>
+<script type="text/javascript">RegisterSod("sp.search.js", "\u002f_layouts\u002f15\u002fsp.search.js?rev=eMyDf7ZGV6rTjB2sDSdovA\u00253D\u00253DTAG0");RegisterSodDep("sp.search.js", "sp.init.js");RegisterSodDep("sp.search.js", "sp.runtime.js");</script>
+<script type="text/javascript">RegisterSod("ajaxtoolkit.js", "\u002f_layouts\u002f15\u002fajaxtoolkit.js?rev=QMOrn5UbYSYhyGhZrgrTjg\u00253D\u00253DTAG0");RegisterSodDep("ajaxtoolkit.js", "search.clientcontrols.js");</script>
+<script type="text/javascript">RegisterSod("cui.js", "\u002f_layouts\u002f15\u002fcui.js?rev=TNhZis7\u00252Bj86kkQPS61e3nw\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002f15\u002finplview.js?rev=M\u00252BEOoyWfjP5TyLsaUlbNgA\u00253D\u00253DTAG0");RegisterSodDep("inplview", "strings.js");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "clienttemplates.js");RegisterSodDep("inplview", "sp.js");</script>
+<script type="text/javascript">RegisterSod("ribbon", "\u002f_layouts\u002f15\u002fsp.ribbon.js?rev=71whaUzRCFtzNGLPRRuDZQ\u00253D\u00253DTAG0");RegisterSodDep("ribbon", "strings.js");RegisterSodDep("ribbon", "core.js");RegisterSodDep("ribbon", "sp.core.js");RegisterSodDep("ribbon", "sp.js");RegisterSodDep("ribbon", "cui.js");RegisterSodDep("ribbon", "sp.res.resx");RegisterSodDep("ribbon", "sp.runtime.js");RegisterSodDep("ribbon", "inplview");</script>
+<script type="text/javascript">RegisterSod("sp.ui.policy.resources.resx", "\u002f_layouts\u002f15\u002fScriptResx.ashx?culture=sl\u00252Dsi\u0026name=SP\u00252EUI\u00252EPolicy\u00252EResources\u0026rev=y2uP4rDiBO43Tnc3af4MkA\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("mdn.js", "\u002f_layouts\u002f15\u002fmdn.js?rev=n0g\u00252FdHfO24JOLH\u00252FiRZEgQA\u00253D\u00253DTAG0");RegisterSodDep("mdn.js", "sp.init.js");RegisterSodDep("mdn.js", "core.js");RegisterSodDep("mdn.js", "sp.runtime.js");RegisterSodDep("mdn.js", "sp.js");RegisterSodDep("mdn.js", "cui.js");RegisterSodDep("mdn.js", "ribbon");RegisterSodDep("mdn.js", "sp.ui.policy.resources.resx");</script>
+<script type="text/javascript">RegisterSod("userprofile", "\u002f_layouts\u002f15\u002fsp.userprofiles.js?rev=J0M1pzLkfDXcJflabMvTYA\u00253D\u00253DTAG0");RegisterSodDep("userprofile", "sp.runtime.js");</script>
+<script type="text/javascript">RegisterSod("followingcommon.js", "\u002f_layouts\u002f15\u002ffollowingcommon.js?rev=0SqBvnvrucMx\u00252BwL\u00252FLduhHA\u00253D\u00253DTAG0");RegisterSodDep("followingcommon.js", "strings.js");RegisterSodDep("followingcommon.js", "sp.js");RegisterSodDep("followingcommon.js", "userprofile");RegisterSodDep("followingcommon.js", "core.js");RegisterSodDep("followingcommon.js", "mQuery.js");</script>
+<script type="text/javascript">RegisterSod("profilebrowserscriptres.resx", "\u002f_layouts\u002f15\u002f1060\u002fprofilebrowserscriptres.js?rev=SguO5u7xgMWITPBldRYbjQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.ui.mysitecommon.js", "\u002f_layouts\u002f15\u002fsp.ui.mysitecommon.js?rev=FMa\u00252B5M0GbowN0IoRJ6QXLw\u00253D\u00253DTAG0");RegisterSodDep("sp.ui.mysitecommon.js", "sp.init.js");RegisterSodDep("sp.ui.mysitecommon.js", "sp.runtime.js");RegisterSodDep("sp.ui.mysitecommon.js", "userprofile");RegisterSodDep("sp.ui.mysitecommon.js", "profilebrowserscriptres.resx");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f15\u002fie55up.js?rev=suwoZ14VL0lOtKrXT0r1FQ\u00253D\u00253DTAG0");RegisterSodDep("browserScript", "strings.js");</script>
+<script type="text/javascript">RegisterSod("offline.js", "\u002f_layouts\u002f15\u002foffline.js?rev=Oythv93IGn8Y9EV\u00252FiDCqxg\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("WPAdderClass", "\u002f_layouts\u002f15\u002fwpadder.js?rev=R5nbSrNEs9bHucQR4Fl97w\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("dragdrop.js", "\u002f_layouts\u002f15\u002fdragdrop.js?rev=SVgjncL5MXReKXF3MlsP0w\u00253D\u00253DTAG0");RegisterSodDep("dragdrop.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("quicklaunch.js", "\u002f_layouts\u002f15\u002fquicklaunch.js?rev=AJP\u00252FoBn7zuvLf5Z6LGnLcg\u00253D\u00253DTAG0");RegisterSodDep("quicklaunch.js", "strings.js");RegisterSodDep("quicklaunch.js", "dragdrop.js");</script>
+<link type="text/xml" rel="alternate" href="/_vti_bin/spsdisco.aspx" />
+		
+		<link rel="canonical" href="https://www.sloveniacontrol.si:443/Strani/Summary-C.aspx" />
+		
+	<style type="text/css">
+	.s4-skipribbonshortcut { display:none; }
+
+</style></head>
+<body>
+  <div id="imgPrefetch" style="display:none">
+<img src="/_layouts/15/images/favicon.ico?rev=43" />
+<img src="/_layouts/15/images/spcommon.png?rev=43" />
+<img src="/PublishingImages/logo_si.png?rev=43" />
+</div>
+
+  <noscript><div class='noindex'>Morda poskušate dostopiti do te strani iz zaščitenega brskalnika v strežniku. Omogočite skripte in znova naložite to stran.</div></noscript>
+  
+  <form method="post" action="./Summary-C.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="_wpcmWpid" id="_wpcmWpid" value="" />
+<input type="hidden" name="wpcmVal" id="wpcmVal" value="" />
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="noDigest" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="" />
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="_maintainWorkspaceScrollPosition" id="_maintainWorkspaceScrollPosition" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwMzc4NTg3MzcPZBYCZg9kFgICAQ9kFgQCAQ9kFgQCBw9kFgJmD2QWAgIBDxYCHhNQcmV2aW91c0NvbnRyb2xNb2RlCymIAU1pY3Jvc29mdC5TaGFyZVBvaW50LldlYkNvbnRyb2xzLlNQQ29udHJvbE1vZGUsIE1pY3Jvc29mdC5TaGFyZVBvaW50LCBWZXJzaW9uPTE2LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTcxZTliY2UxMTFlOTQyOWMBZAITD2QWAgIDD2QWAmYPZBYCZg88KwAGAGQCCQ9kFgwCAQ9kFgICAQ9kFgQFJmdfZjczOWU0YThfN2NhZF80YmQ2XzhjM2ZfMmU0MGYyZmMxNWUxD2QWAmYPZBYCAgMPDxYCHgdWaXNpYmxlZ2RkBSZnXzRhMzAzODJjX2IxNzRfNDEyZV9iM2IzX2QyZGQ0ZmM1YzJhNg9kFgRmDxYCHwFoZAIBDxYCHwFoZAIhD2QWAgIDDxYCHwFoFgJmD2QWBAIDD2QWBgIBDxYCHwFoZAIDDxYCHwFoZAIFDxYCHwFoZAIEDw8WAh4JQWNjZXNzS2V5BQEvZGQCIw9kFgICAw9kFgICAQ9kFgQCAw9kFgJmDw8WBB4EXyFTQgICHghDc3NDbGFzcwUXbXMtcHJvbW90ZWRBY3Rpb25CdXR0b25kZAIFDw8WBh8EBRdtcy1wcm9tb3RlZEFjdGlvbkJ1dHRvbh8DAgIfAWhkZAItD2QWAgIDD2QWAgIDDxYCHgtfIUl0ZW1Db3VudAIIFhACAQ9kFgRmDxUGAAYvZG9tb3YAAAAFRG9tb3ZkAgEPFgQfBWYfAWhkAgIPZBYEZg8VBgkgZHJvcGRvd24BIwAQIGRyb3Bkb3duLXRvZ2dsZVcgaWQ9J25hdkJhckRyb3B3RG93bicgZGF0YS10b2dnbGU9J2Ryb3Bkb3duJyBhcmlhLWhhc3BvcHVwPSd0cnVlJyBhcmlhLWV4YXBuZGVkPSdmYWxzZScKWmEgamF2bm9zdGQCAQ8WAh8FAgsWFgIBD2QWAmYPFQMSL3phLWphdm5vc3Qvbm92aWNlAAZOb3ZpY2VkAgIPZBYCZg8VAyovemEtamF2bm9zdC9pbmZvcm1hY2lqZS16YS1qYWRyYWxuZS1waWxvdGUAHkluZm9ybWFjaWplIHphIGphZHJhbG5lIHBpbG90ZWQCAw9kFgJmDxUDPi96YS1qYXZub3N0L2luZm9ybWFjaWplLXphLW9wZXJhdG9yamUtYnJlenBpbG90bmloLXpyYWtvcGxvdm92ADJJbmZvcm1hY2lqZSB6YSBvcGVyYXRvcmplIGJyZXpwaWxvdG5paCB6cmFrb3Bsb3ZvdmQCBA9kFgJmDxUDKS96YS1qYXZub3N0L3BvbWVtYm5pLXBvZGF0a2ktby1wb3Nsb3Zhbmp1AB1Qb21lbWJuaSBwb2RhdGtpIG8gcG9zbG92YW5qdWQCBQ9kFgJmDxUDGy96YS1qYXZub3N0L2xldG5hLXBvcm/EjWlsYQAPTGV0bmEgcG9yb8SNaWxhZAIGD2QWAmYPFQMvL3phLWphdm5vc3Qva2F0YWxvZy1pbmZvcm1hY2lqLWphdm5lZ2Etem5hxI1hamEAI0thdGFsb2cgaW5mb3JtYWNpaiBqYXZuZWdhIHpuYcSNYWphZAIHD2QWAmYPFQNOL3phLWphdm5vc3Qvb2JqYXZlLXYtc2tsYWR1LXotemFrb25vbS1vLWRvc3RvcHUtZG8taW5mb3JtYWNpai1qYXZuZWdhLXpuYcSNYWphAEJPYmphdmUgdiBza2xhZHUgeiBaYWtvbm9tIG8gZG9zdG9wdSBkbyBpbmZvcm1hY2lqIGphdm5lZ2Egem5hxI1hamFkAggPZBYCZg8VAyQvemEtamF2bm9zdC92YXJzdHZvLW9zZWJuaWgtcG9kYXRrb3YAGFZhcnN0dm8gb3NlYm5paCBwb2RhdGtvdmQCCQ9kFgJmDxUDTi96YS1qYXZub3N0L29iamF2YS1wb2RhdGtvdi1wby16YWtvbnUtby1zbG92ZW5za2VtLWRyxb5hdm5lbS1ob2xkaW5ndS0oenNkaC0xKQBCT2JqYXZhIHBvZGF0a292IHBvIFpha29udSBvIFNsb3ZlbnNrZW0gZHLFvmF2bmVtIGhvbGRpbmd1IChaU0RILTEpZAIKD2QWAmYPFQMgL3phLWphdm5vc3QvaXpqYXZhLW8tZG9zdG9wbm9zdGkAFEl6amF2YSBvIGRvc3RvcG5vc3RpZAILD2QWAmYPFQMmL3phLWphdm5vc3QvdmFyc3R2by3EjWxvdmVrb3ZpaC1wcmF2aWMAGlZhcnN0dm8gxI1sb3Zla292aWggcHJhdmljZAIDD2QWBGYPFQYAEy9zdGF0aXN0aWthLXByb21ldGEAAAASU3RhdGlzdGlrYSBwcm9tZXRhZAIBDxYEHwVmHwFoZAIED2QWBGYPFQYJIGRyb3Bkb3duASMAECBkcm9wZG93bi10b2dnbGVXIGlkPSduYXZCYXJEcm9wd0Rvd24nIGRhdGEtdG9nZ2xlPSdkcm9wZG93bicgYXJpYS1oYXNwb3B1cD0ndHJ1ZScgYXJpYS1leGFwbmRlZD0nZmFsc2UnCk8gcG9kamV0anVkAgEPFgIfBQIMFhgCAQ9kFgJmDxUDGy9vLXBvZGpldGp1L29zbm92bmktcG9kYXRraQAPT3Nub3ZuaSBwb2RhdGtpZAICD2QWAmYPFQMeL28tcG9kamV0anUvby1uYXMjcHJlZHN0YXZpdGV2AAxQcmVkc3Rhdml0ZXZkAgMPZBYCZg8VAxkvby1wb2RqZXRqdS9vLW5hcyN2b2RzdHZvAAdWb2RzdHZvZAIED2QWAmYPFQMfL28tcG9kamV0anUvby1uYXMjbmFkem9ybmktc3ZldAANTmFkem9ybmkgc3ZldGQCBQ9kFgJmDxUDJC9vLXBvZGpldGp1L28tbmFzI2tvZGVrcy11cHJhdmxqYW5qYQASS29kZWtzIHVwcmF2bGphbmphZAIGD2QWAmYPFQM2L28tcG9kamV0anUvby1uYXMjdml6aWphLXBvc2xhbnN0dm8taW4tdnJlZG5vdGUtZHJ1emJlACZWaXppamEsIHBvc2xhbnN0dm8gaW4gdnJlZG5vdGUgZHJ1xb5iZWQCBw9kFgJmDxUDIC9vLXBvZGpldGp1L3BvbGl0aWthLXVwcmF2bGphbmphABRQb2xpdGlrYSB1cHJhdmxqYW5qYWQCCA9kFgJmDxUDIS9vLXBvZGpldGp1L3BvbGl0aWthLXJhem5vbGlrb3N0aQAVUG9saXRpa2EgcmF6bm9saWtvc3RpZAIJD2QWAmYPFQMaL28tcG9kamV0anUvZXRpxI1uaS1rb2Rla3MADkV0acSNbmkga29kZWtzZAIKD2QWAmYPFQMnL28tcG9kamV0anUvby1uYXMjb3JnYW5pemlyYW5vc3QtZHJ1emJlABZPcmdhbml6aXJhbm9zdCBkcnXFvmJlZAILD2QWAmYPFQMXL28tcG9kamV0anUvY2VydGlmaWthdGkAC0NlcnRpZmlrYXRpZAIMD2QWAmYPFQMiL28tcG9kamV0anUvbWVkbmFyb2Ruby1zb2RlbG92YW5qZQAWTWVkbmFyb2RubyBzb2RlbG92YW5qZWQCBQ9kFgRmDxUGAAgva29udGFrdAAAAAdLb250YWt0ZAIBDxYEHwVmHwFoZAIGD2QWBGYPFQYACS9pc2thbG5pawAAAAhJc2thbG5pa2QCAQ8WBB8FZh8BaGQCBw9kFgRmDxUGAAgvZW5nbGlzaAAAAAdFbmdsaXNoZAIBDxYEHwVmHwFoZAIID2QWBGYPFQYACy9lYXJvLXZzdG9wAAAACmVBUk8gVlNUT1BkAgEPFgQfBWYfAWhkAi8PZBYCAgEPZBYCAgEPPCsABQEADxYCHhVQYXJlbnRMZXZlbHNEaXNwbGF5ZWRmZGQCMw9kFgICAQ9kFgQCDw8PFgIfAWhkFgICAw9kFgJmD2QWAgIDD2QWAgIFD2QWAgIBDzwrAAkBAA8WBB4NUGF0aFNlcGFyYXRvcgQIHg1OZXZlckV4cGFuZGVkZ2RkAhMPZBYCZg8WAh8BaGRkuiRfLTWJ8PpXsyf8yx+H8S+DI0LqWxUrDl+2aQeSy7A=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=_XcftfAoirK1h293RA5yE6Vxe60sQp7tOSjGd-NLBM-M7CCzd7JQgKRDOntbmqcPA5DoFdd7LL6Y4iaMWITlyyNkX5ezq1gMi8uV9SGEf1U1&amp;t=637100898046795651" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+
+var g_correlationId = '4a75e9a0-04db-60fa-a65f-bc39b0923dde';
+var g_wsaQoSEnabled = false;
+var g_wsaQoSDataPoints = [];
+var g_wsaRUMEnabled = false;
+var g_wsaLCID = 1060;
+var g_wsaListTemplateId = 850;
+var g_wsaSiteTemplateId = 'BLANKINTERNET#0';
+var _spPageContextInfo={"webServerRelativeUrl":"/","webAbsoluteUrl":"https://www.sloveniacontrol.si","viewId":"","listId":"{81c25357-3342-4027-9a99-0b168aee7d7d}","listPermsMask":{"High":16,"Low":196705},"listUrl":"/Strani","listTitle":"Strani","listBaseTemplate":850,"viewOnlyExperienceEnabled":false,"blockDownloadsExperienceEnabled":false,"idleSessionSignOutEnabled":false,"cdnPrefix":"","siteAbsoluteUrl":"https://www.sloveniacontrol.si","siteId":"{c2a63d61-4cc2-47a8-9142-7589fc7c92ee}","showNGSCDialogForSyncOnTS":false,"supportPoundStorePath":true,"supportPercentStorePath":true,"siteSubscriptionId":null,"AllowCustomMarkupInCalculatedField":false,"isSPO":false,"farmLabel":null,"serverRequestPath":"/Strani/Summary-C.aspx","layoutsUrl":"_layouts/15","webId":"{764f82ee-8745-4d1f-8cdb-d6e32c87bd41}","webTitle":"Kontrola zračnega prometa Slovenije","webTemplate":"53","webTemplateConfiguration":"BLANKINTERNET#0","webDescription":"Domača stran","tenantAppVersion":"0","isAppWeb":false,"webLogoUrl":"/PublishingImages/logo_si.png","webLanguage":1060,"currentLanguage":1060,"currentUICultureName":"sl-SI","currentCultureName":"sl-SI","currentCultureLCID":1060,"env":null,"nid":0,"fid":0,"serverTime":"2023-10-31T09:54:22.2880557Z","siteClientTag":"179$$16.0.10361.12114","crossDomainPhotosEnabled":false,"openInClient":false,"Has2019Era":true,"webUIVersion":15,"webPermMasks":{"High":16,"Low":196705},"pageListId":"{81c25357-3342-4027-9a99-0b168aee7d7d}","pageItemId":14,"pagePermsMask":{"High":16,"Low":196705},"pagePersonalizationScope":1,"userEmail":"","userId":0,"userLoginName":null,"userDisplayName":null,"isAnonymousUser":true,"isAnonymousGuestUser":false,"isEmailAuthenticationGuestUser":false,"isExternalGuestUser":false,"systemUserKey":null,"alertsEnabled":true,"siteServerRelativeUrl":"/","allowSilverlightPrompt":"True","themeCacheToken":"/::1:","themedCssFolderUrl":null,"themedImageFileNames":null,"modernThemingEnabled":true,"isSiteAdmin":false,"ExpFeatures":[480216468,1884350801,1158731092,62197791,538521105,335811329,4194306,34614301,268500996,-1946025984,28445328,-2147475455,134291456,65536,288,950272,1282,808326148,134217873,0,0,-1073217536,545285252,18350656,-467402752,6291457,-2147483644,1074794496,-1728053184,1845537108,622628,4102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"killSwitches":{},"CorrelationId":"4a75e9a0-04db-60fa-a65f-bc39b0923dde","hasManageWebPermissions":false,"isNoScriptEnabled":false,"groupId":null,"groupHasHomepage":true,"groupHasQuickLaunchConversationsLink":false,"departmentId":null,"hubSiteId":null,"hasPendingWebTemplateExtension":false,"isHubSite":false,"isWebWelcomePage":false,"siteClassification":"","hideSyncButtonOnODB":false,"showNGSCDialogForSyncOnODB":false,"sitePagesEnabled":false,"sitePagesFeatureVersion":0,"DesignPackageId":"00000000-0000-0000-0000-000000000000","groupType":null,"groupColor":"#8151fd","siteColor":"#8151fd","headerEmphasis":0,"navigationInfo":null,"guestsEnabled":false,"MenuData":{"SignInUrl":"/_layouts/15/Authenticate.aspx?Source=%2FStrani%2FSummary%2DC%2Easpx"},"RecycleBinItemCount":-1,"PublishingFeatureOn":true,"PreviewFeaturesEnabled":false,"disableAppViews":false,"disableFlows":false,"serverRedirectedUrl":null,"formDigestValue":"0x99B27F439A7A713549811BAFD516394A0282C2B20A2034AD2675F1392C28E3E7C41005E86EA2AD1350F6F76C58CBDB5BAB973ECDF91F24C722811A3497E07704,31 Oct 2023 09:54:22 -0000","maximumFileSize":10240,"formDigestTimeoutSeconds":1800,"canUserCreateMicrosoftForm":false,"canUserCreateVisioDrawing":true,"readOnlyState":null,"isTenantDevSite":false,"preferUserTimeZone":false,"userTimeZoneData":null,"userTime24":false,"userFirstDayOfWeek":null,"webTimeZoneData":null,"webTime24":false,"webFirstDayOfWeek":null,"isSelfServiceSiteCreationEnabled":null,"alternateWebAppHost":"","aadTenantId":"","aadUserId":"","aadInstanceUrl":"","msGraphEndpointUrl":"https://","allowInfectedDownload":true};_spPageContextInfo.updateFormDigestPageLoaded=new Date();_spPageContextInfo.clientServerTimeDelta=new Date(_spPageContextInfo.serverTime)-new Date();if(typeof(define)=='function'){define('SPPageContextInfo',[],function(){return _spPageContextInfo;});}function CallServer_42713877(arg, context) {WebForm_DoCallback('ctl00$ctl22',arg,SP.UI.MyLinksRibbon.MyLinksRibbonPageComponent.ribbonActionCallback,context,null,false); }function _myLinksRibbonLoad2()
+{
+    var fnd = function () {
+        try {
+            mylinks_init.MyLinksInit('CallServer_42713877'); 
+        } 
+        catch (Ex)
+        { }
+    };
+    RegisterSod('mylinks_init', '/_layouts/15/sp.ui.mylinksribbon.js?rev=0StMaEfxj2Emiye6tWPA%2BA%3D%3DTAG0');
+    LoadSodByKey('mylinks_init', fnd);
+}
+
+function _myLinksRibbonLoad1()
+{
+    ExecuteOrDelayUntilScriptLoaded(_myLinksRibbonLoad2, 'SP.Ribbon.js');
+}
+
+_spBodyOnLoadFunctionNames.push('_myLinksRibbonLoad1');
+var L_Menu_BaseUrl="";
+var L_Menu_LCID="1060";
+var L_Menu_SiteTheme="null";
+document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};var dlc_fvsi = {"DefaultViews":[],"ViewUrls":[],"WebUrl":"\/"};
+function _spNavigateHierarchy(nodeDiv, dataSourceId, dataPath, url, listInContext, type) {
+
+    CoreInvoke('ProcessDefaultNavigateHierarchy', nodeDiv, dataSourceId, dataPath, url, listInContext, type, document.forms.aspnetForm, "", "\u002fStrani\u002fSummary-C.aspx");
+
+}
+Flighting.ExpFeatures = [480216468,1884350801,1158731092,62197791,538521105,335811329,4194306,34614301,268500996,-1946025984,28445328,-2147475455,134291456,65536,288,950272,1282,808326148,134217873,0,0,-1073217536,545285252,18350656,-467402752,6291457,-2147483644,1074794496,-1728053184,1845537108,622628,4102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; (function()
+{
+    if(typeof(window.SP) == "undefined") window.SP = {};
+    if(typeof(window.SP.YammerSwitch) == "undefined") window.SP.YammerSwitch = {};
+
+    var ysObj = window.SP.YammerSwitch;
+    ysObj.IsEnabled = false;
+    ysObj.TargetYammerHostName = "www.yammer.com";
+} )(); var _spWebPartComponents = new Object();
+                var g_syncButtonUsePopup = true;
+                //]]>
+</script>
+
+<script src="/_layouts/15/blank.js?rev=OHvLonmRUM9Bseamss0TPA%3D%3DTAG0" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+window.SPThemeUtils && SPThemeUtils.RegisterCssReferences([{"Url":"\u002f_layouts\u002f15\u002f1060\u002fstyles\u002fThemable\u002fcorev15.css?rev=saxG34a\u00252BIbfMY6Yvosg5Gg\u00253D\u00253DTAG0","OriginalUrl":"\u002f_layouts\u002f15\u002f1060\u002fstyles\u002fThemable\u002fcorev15.css?rev=saxG34a\u00252BIbfMY6Yvosg5Gg\u00253D\u00253DTAG0","Id":"CssLink-21753e2801fc4eaba91b99df2589100f","ConditionalExpression":"","After":"","RevealToNonIE":"false"},{"Url":"\u002fStyle Library\u002fAIP\u002fCSS\u002fportal.css","OriginalUrl":"\u002fStyle Library\u002fAIP\u002fCSS\u002fportal.css","Id":"CssLink-2a0c596c428c4179a9ab4b0de3029514","ConditionalExpression":"","After":"","RevealToNonIE":"false"},{"Url":"\u002f_layouts\u002f15\u002f1060\u002fstyles\u002fSuiteNav.css?rev=HjY5\u00252Fx6KOUvFQ\u00252F1uCj8NSg\u00253D\u00253DTAG0","OriginalUrl":"\u002f_layouts\u002f15\u002f1060\u002fstyles\u002fSuiteNav.css?rev=HjY5\u00252Fx6KOUvFQ\u00252F1uCj8NSg\u00253D\u00253DTAG0","Id":"CssLink-63c70311f716407b8029783734b6f9f3","ConditionalExpression":"","After":"","RevealToNonIE":"false"},{"Url":"\u002fStyle Library\u002fAIP\u002fCSS\u002fportal.css?v=201006135735","OriginalUrl":"\u002fStyle Library\u002fAIP\u002fCSS\u002fportal.css?v=201006135735","Id":"CssLink-2da4e22704034ddf927b55644eabb8f3","ConditionalExpression":"","After":"","RevealToNonIE":"false"}]);
+(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+            SP.SOD.executeFunc('core.js', 'FollowingCallout', function() { FollowingCallout(); });
+        });
+    })();(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+            SP.SOD.executeFunc('core.js', 'FollowingDocument', function() { FollowingDocument(); });
+        });
+    })();if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();function WebForm_OnSubmit() {
+UpdateFormDigest('\u002f', 1440000);
+                    var workspaceElem = GetCachedElement("s4-workspace");
+                    if (workspaceElem != null)
+                    {
+                        var scrollElem = GetCachedElement("_maintainWorkspaceScrollPosition");
+                        if (scrollElem != null)
+                        {
+                            scrollElem.value = workspaceElem.scrollTop;
+                        }
+                    };
+                if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;};
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F8B7566D" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAIqqYPN36/NTJ3Hpnw01KRoMTZk9qLGncDjImqxppn1M3yFkrS9MJTZJWyHmdH/Afa4YN93x4smIxWlm7vf2mZ+" />
+</div>
+	<script type="text/javascript"> var submitHook = function () { return false; }; theForm._spOldSubmit = theForm.submit; theForm.submit = function () { if (!submitHook()) { this._spOldSubmit(); } }; </script>
+	<span id="DeltaSPWebPartManager">
+		
+	</span>
+	<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm', ['fctl00$WebPartAdderUpdatePanel',''], [], ['ctl00$WebPartAdder',''], 90, 'ctl00');
+//]]>
+</script>
+
+	<span id="DeltaDelegateControls">
+		
+		
+	</span>
+<div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+	<a id="linkTurnOnAcc" title="Vklopi bolj dostopen način" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">Vklopi bolj dostopen način</a>
+</div>
+<div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+	<a id="linkTurnOffAcc" title="Izklopi bolj dostopen način" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">Izklopi bolj dostopen način</a>
+</div>
+<div class="s4-notdlg s4-skipribbonshortcut noindex">
+	<a href="javascript:;" title="Preskoči ukaz traka" onclick="document.getElementById('startNavigation').focus();" class="ms-accessible ms-acc-button" accesskey="Y">Preskoči ukaz traka</a>
+</div>
+<div class="s4-notdlg noindex">
+	<a href="javascript:;" title="Preskoči na glavno vsebino" onclick="document.getElementById('mainContent').focus();" class="ms-accessible ms-acc-button">Preskoči na glavno vsebino</a>
+</div>
+<div id="TurnOffAnimation" style="display:none;" class="s4-notdlg noindex">
+	<a id="linkTurnOffAnimation" title="Izklopi animacije" href="#" class="ms-accessible ms-acc-button" onclick="ToggleAnimationStatus();return false;">Izklopi animacije</a>
+</div>
+<div id="TurnOnAnimation" style="display:none;" class="s4-notdlg noindex">
+	<a id="linkTurnOnAnimation" title="Vklopi animacije" href="#" class="ms-accessible ms-acc-button" onclick="ToggleAnimationStatus();return false;">Vklopi animacije</a>
+</div>
+<a id="HiddenAnchor" href="javascript:;" style="display:none;"></a>
+<div id="suiteBarDelta" class="ms-dialogHidden d-none hide-anon ms-fullWidth noindex ">
+	
+	<div id="suiteMenuData" class="ms-hide">
+	
+
+
+					   <span class="ms-siteactions-root" id="siteactiontd">
+					   </span>
+	</div>
+	<script type="text/javascript">// <![CDATA[ 
+
+
+		var g_navBarHelpDefaultKey = "HelpHome";
+	// ]]>
+</script>
+	<div id="suiteBarTop" class="ms-fullWidth ms-TopBarBackground-bgColor" style="height:50px; position:relative;">
+
+	</div><div class="wf-family-o365 o365wf" style="display:none">
+
+	</div>
+
+</div>
+	  
+		<div id="ms-hcTest"></div>
+		<div id="s4-ribbonrow" class="hide-anon d-none">
+		<div id="globalNavBox" class="noindex">
+	<div id="ribbonBox">
+	<div id="s4-ribboncont">
+		<div id="DeltaSPRibbon">
+	
+			
+
+			<div class='ms-cui-ribbonTopBars'><div class='ms-cui-topBar1'></div><div class='ms-cui-topBar2'><div id='RibbonContainer-TabRowLeft' class='ms-cui-TabRowLeft ms-core-defaultFont ms-dialogHidden'>
+				</div><div id='RibbonContainer-TabRowRight' class='ms-cui-TabRowRight s4-trc-container s4-notdlg ms-core-defaultFont'>
+					
+					<a onmouseover="this.firstChild.firstChild.style.left=&#39;-217px&#39;; this.firstChild.firstChild.style.top=&#39;-192px&#39;;" onmouseout="this.firstChild.firstChild.style.left=&#39;-218px&#39;; this.firstChild.firstChild.style.top=&#39;-48px&#39;;" onclick="SP.SOD.executeFunc(&#39;followingcommon.js&#39;, &#39;FollowSite&#39;, function() { FollowSite(); }); return false;" id="site_follow_button" title="Spremljajte to mesto in se preprosto vrnite nanj s strani spletnega mesta." class="ms-promotedActionButton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$site_follow_button&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="display:inline-block;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-promotedActionButton-icon"><img src="/_layouts/15/images/spcommon.png?rev=43#ThemeKey=spcommon" alt="Sledite" style="position:absolute;left:-218px;top:-48px;" /></span><span class="ms-promotedActionButton-text">Sledite</span></a>
+					
+					
+<span id="fullscreenmodebox" class="ms-qatbutton">
+	<span id="fullscreenmode">
+		<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-125px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-143px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_fullscreenmodeBtn" title="Osredotočanje na vsebino" onclick="SetFullScreenMode(true);PreventDefaultNavigation();return false;" href="../_catalogs/masterpage/MasterPages/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=43#ThemeKey=spcommon" alt="Osredotočanje na vsebino" style="border:0;position:absolute;left:-143px;top:-178px;" /></span></span></a>
+	</span>
+	<span id="exitfullscreenmode" style="display: none;">
+		<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-179px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-96px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-107px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_exitfullscreenmodeBtn" title="Osredotočanje na vsebino" onclick="SetFullScreenMode(false);PreventDefaultNavigation();return false;" href="../_catalogs/masterpage/MasterPages/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=43#ThemeKey=spcommon" alt="Osredotočanje na vsebino" style="border:0;position:absolute;left:-107px;top:-178px;" /></span></span></a>
+	</span>
+</span>
+
+
+				</div></div></div>
+		
+</div>
+	</div>
+	<span id="DeltaSPNavigation">
+		
+			<span id="ctl00_SPNavigation_ctl00_publishingRibbon"></span>
+
+		
+	</span>
+</div>
+
+
+<div id="DeltaWebPartAdderUpdatePanelContainer" class="ms-core-webpartadder">
+	
+  <div id="WebPartAdderUpdatePanelContainer">
+	<div id="ctl00_WebPartAdderUpdatePanel">
+		
+		<span id="ctl00_WebPartAdder"></span>
+	  
+	</div>
+  </div>
+
+</div>
+		</div>
+		</div>
+		<div id="s4-workspace" class="ms-core-overlay">
+		<div id="s4-bodyContainer">
+
+		<div id="s4-titlerow"
+			class="ms-dialogHidden s4-titlerowhidetitle">
+		<div id="titleAreaBox"
+			class="ms-noList ms-table ms-core-tableNoSpace">
+		<div id="titleAreaRow"
+			class="ms-tableRow">
+			<div class="ms-breadcrumb-box ms-verticalAlignTop">
+				<div
+					class="ms-breadcrumb-top">
+<div class="ms-breadcrumb-dropdownBox" style="display:none;">
+<span id="DeltaBreadcrumbDropdown">
+	
+</span>
+</div>
+<div id="DeltaTopNavigation" class="ms-displayInline ms-core-navigation" role="navigation">
+	
+	
+	
+		<nav class="navbar navbar-light navbar-expand-lg navbar-default s4-notdlg noindex s4-noindex s4-titlerow">
+
+			<div id="siteIcon" class="ms-tableCell ms-verticalAlignTop">
+					<div id="AjaxDelta1">
+		
+						<a id="ctl00_PlaceHolderTopNavBar_SPLinkButton1" class="ms-siteicon-a" href="/">
+							<img id="ctl00_PlaceHolderTopNavBar_SiteLogoImage1" class="navbar-brand ms-siteicon-img" name="onetidHeadbnnr0" src="/PublishingImages/logo_si.png" alt="Kontrola zračnega prometa Slovenije" />
+						</a>
+					
+	</div>
+				</div>
+                <button type="button" class="navbar-toggler btn-light ml-auto" data-toggle="slide-collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbars">
+                    MENU <span class="fa fas fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="bs-example-navbar-collapse-1">
+                                
+                    
+                            <ul class="navbar-nav navbar-right">
+                        
+
+                            <li class="nav-item">
+                                <a href="/domov" class="nav-link">
+                                    Domov
+                                </a>
+								
+                            </li>
+
+                        
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id='navBarDropwDown' data-toggle='dropdown' aria-haspopup='true' aria-exapnded='false'>
+                                    Za javnost
+                                </a>
+								
+										<ul class="dropdown-menu" aria-labelledby="navBarDropwDown">
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/za-javnost/novice" class="nav-link">
+												Novice
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/za-javnost/informacije-za-jadralne-pilote" class="nav-link">
+												Informacije za jadralne pilote
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/za-javnost/informacije-za-operatorje-brezpilotnih-zrakoplovov" class="nav-link">
+												Informacije za operatorje brezpilotnih zrakoplovov
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/za-javnost/pomembni-podatki-o-poslovanju" class="nav-link">
+												Pomembni podatki o poslovanju
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/za-javnost/letna-poročila" class="nav-link">
+												Letna poročila
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/za-javnost/katalog-informacij-javnega-značaja" class="nav-link">
+												Katalog informacij javnega značaja
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/za-javnost/objave-v-skladu-z-zakonom-o-dostopu-do-informacij-javnega-značaja" class="nav-link">
+												Objave v skladu z Zakonom o dostopu do informacij javnega značaja
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/za-javnost/varstvo-osebnih-podatkov" class="nav-link">
+												Varstvo osebnih podatkov
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/za-javnost/objava-podatkov-po-zakonu-o-slovenskem-državnem-holdingu-(zsdh-1)" class="nav-link">
+												Objava podatkov po Zakonu o Slovenskem državnem holdingu (ZSDH-1)
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/za-javnost/izjava-o-dostopnosti" class="nav-link">
+												Izjava o dostopnosti
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/za-javnost/varstvo-človekovih-pravic" class="nav-link">
+												Varstvo človekovih pravic
+											</a>
+										</li>
+									
+										</ul>
+									
+                            </li>
+
+                        
+
+                            <li class="nav-item">
+                                <a href="/statistika-prometa" class="nav-link">
+                                    Statistika prometa
+                                </a>
+								
+                            </li>
+
+                        
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id='navBarDropwDown' data-toggle='dropdown' aria-haspopup='true' aria-exapnded='false'>
+                                    O podjetju
+                                </a>
+								
+										<ul class="dropdown-menu" aria-labelledby="navBarDropwDown">
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/osnovni-podatki" class="nav-link">
+												Osnovni podatki
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/o-nas#predstavitev" class="nav-link">
+												Predstavitev
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/o-nas#vodstvo" class="nav-link">
+												Vodstvo
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/o-nas#nadzorni-svet" class="nav-link">
+												Nadzorni svet
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/o-nas#kodeks-upravljanja" class="nav-link">
+												Kodeks upravljanja
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/o-nas#vizija-poslanstvo-in-vrednote-druzbe" class="nav-link">
+												Vizija, poslanstvo in vrednote družbe
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/politika-upravljanja" class="nav-link">
+												Politika upravljanja
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/politika-raznolikosti" class="nav-link">
+												Politika raznolikosti
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/etični-kodeks" class="nav-link">
+												Etični kodeks
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/o-nas#organiziranost-druzbe" class="nav-link">
+												Organiziranost družbe
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/certifikati" class="nav-link">
+												Certifikati
+											</a>
+										</li>
+									
+										<li class="nav-item dropdown-item" >
+											<a href="/o-podjetju/mednarodno-sodelovanje" class="nav-link">
+												Mednarodno sodelovanje
+											</a>
+										</li>
+									
+										</ul>
+									
+                            </li>
+
+                        
+
+                            <li class="nav-item">
+                                <a href="/kontakt" class="nav-link">
+                                    Kontakt
+                                </a>
+								
+                            </li>
+
+                        
+
+                            <li class="nav-item">
+                                <a href="/iskalnik" class="nav-link">
+                                    Iskalnik
+                                </a>
+								
+                            </li>
+
+                        
+
+                            <li class="nav-item">
+                                <a href="/english" class="nav-link">
+                                    English
+                                </a>
+								
+                            </li>
+
+                        
+
+                            <li class="nav-item">
+                                <a href="/earo-vstop" class="nav-link">
+                                    eARO VSTOP
+                                </a>
+								
+                            </li>
+
+                        
+                            </ul>
+                        
+
+                </div>
+                <!-- /.navbar-collapse -->
+			 
+			<div id="hiddenNavBarControls" style="display: none;">
+				<div id="DeltaPlaceHolderSearchArea" class="ms-mpSearchBox ms-floatRight">
+		
+					
+						<div id="searchInputBox">
+							<div class="ms-webpart-chrome ms-webpart-chrome-fullWidth ">
+			<div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPartWPQ1" width="100%" class="ms-WPBody noindex " OnlyForMePart="true" allowDelete="false" style="" ><div componentid="ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr" id="ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr"><div id="SearchBox" name="Control"><div class="ms-srch-sb ms-srch-sb-border" id="ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sboxdiv"><input type="text" value="Preišči tem mestu" maxlength="2048" title="Preišči tem mestu" id="ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox" autocomplete="off" autocorrect="off" onkeypress="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {if (Srch.U.isEnterKey(String.fromCharCode(event.keyCode))) {$find('ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr').search($get('ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox').value);return Srch.U.cancelEvent(event);}})" onkeydown="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr');ctl.activateDefaultQuerySuggestionBehavior();})" onfocus="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr');ctl.hidePrompt();ctl.setBorder(true);})" onblur="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr'); if (ctl){ ctl.showPrompt(); ctl.setBorder(false);}})" class="ms-textSmall ms-srch-sb-prompt ms-helperText"/><a title="Iskanje" role="button" class="ms-srch-sb-searchLink" id="ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_SearchLink" onclick="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {$find('ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr').search($get('ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox').value);})" href="javascript: {}" ><img src="/_layouts/15/images/searchresultui.png?rev=43#ThemeKey=searchresultui" class="ms-srch-sb-searchImg" id="searchImg" alt="Iskanje" /></a><div class="ms-qSuggest-container ms-shadow" id="AutoCompContainer"><div id="ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_AutoCompList"></div></div></div></div></div><noscript><div id="ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_noscript">Kaže, da v brskalniku ni omogočen JavaScript. Vklopite JavaScript in poskusite znova.</div></noscript><div id="ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1">
+
+			</div><div class="ms-clear"></div></div>
+		</div>
+						</div>
+					
+				
+	</div>
+			</div>
+				
+
+		</nav>
+		<div class="menu-overlay"></div>
+	
+
+</div>
+				</div>
+
+<h1 style="display: none;" id="pageTitle" class="ms-core-pageTitle">
+  <span id="DeltaPlaceHolderPageTitleInTitleArea">
+	
+	  <span><span><a title="Summary-C" href="/Strani/Summary-C.aspx">Summary-C</a></span></span>
+	
+  </span>
+  <div id="DeltaPlaceHolderPageDescription" class="ms-displayInlineBlock ms-normalWrap">
+	
+	<a href="javascript:;" id="ms-pageDescriptionDiv" style="display:none;" data-accessibility-nocheck="true">
+	  <span id="ms-pageDescriptionImage">&#160;</span>
+	</a>
+	<span class="ms-accessible" id="ms-pageDescription">
+	  
+	</span>
+	<script type="text/javascript">// <![CDATA[ 
+
+
+	  _spBodyOnLoadFunctionNames.push("setupPageDescriptionCallout");
+	// ]]>
+</script>
+  
+</div>
+</h1>
+
+			</div>
+			
+		</div>
+		</div>
+		</div>
+		<div id="contentRow">
+<div class="d-none">
+
+<div id="sideNavBox"
+	role="Navigation"
+	class="ms-dialogHidden ms-forceWrap ms-noList">
+  <div id="DeltaPlaceHolderLeftNavBar" class="ms-core-navigation" role="navigation">
+	
+	
+		
+				<a id="startNavigation" name="startNavigation" tabIndex="-1"></a>
+				
+				
+				
+				
+				
+				<div class="ms-core-sideNavBox-removeLeftMargin">
+				<div id="ctl00_PlaceHolderLeftNavBar_QuickLaunchNavigationManager">
+		
+					
+					<div id="zz1_V4QuickLaunchMenu" class=" noindex ms-core-listMenu-verticalBox">
+			<ul id="zz2_RootAspMenu" class="root ms-core-listMenu-root static">
+				<li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/domov"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Domov</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Za javnost</span></span></a><ul class="static">
+					<li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost/novice"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Novice</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost/informacije-za-jadralne-pilote"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Informacije za jadralne pilote</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost/informacije-za-operatorje-brezpilotnih-zrakoplovov"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Informacije za operatorje brezpilotnih zrakoplovov</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost/pomembni-podatki-o-poslovanju"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Pomembni podatki o poslovanju</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost/letna-poročila"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Letna poročila</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost/katalog-informacij-javnega-značaja"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Katalog informacij javnega značaja</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost/objave-v-skladu-z-zakonom-o-dostopu-do-informacij-javnega-značaja"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Objave v skladu z Zakonom o dostopu do informacij javnega značaja</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost/varstvo-osebnih-podatkov"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Varstvo osebnih podatkov</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost/objava-podatkov-po-zakonu-o-slovenskem-državnem-holdingu-(zsdh-1)"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Objava podatkov po Zakonu o Slovenskem državnem holdingu (ZSDH-1)</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost/izjava-o-dostopnosti"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Izjava o dostopnosti</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/za-javnost/varstvo-človekovih-pravic"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Varstvo človekovih pravic</span></span></a></li>
+				</ul></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/statistika-prometa"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Statistika prometa</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">O podjetju</span></span></a><ul class="static">
+					<li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/osnovni-podatki"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Osnovni podatki</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/o-nas"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Predstavitev#predstavitev</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/o-nas"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Vodstvo#vodstvo</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/o-nas"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Nadzorni svet#nadzorni-svet</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/o-nas"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Kodeks upravljanja#kodeks-upravljanja</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/o-nas"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Vizija, poslanstvo in vrednote družbe#vizija-poslanstvo-in-vrednote-druzbe</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/politika-upravljanja"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Politika upravljanja</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/politika-raznolikosti"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Politika raznolikosti</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/etični-kodeks"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Etični kodeks</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/o-nas"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Organiziranost družbe#organiziranost-druzbe</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/certifikati"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Certifikati</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/o-podjetju/mednarodno-sodelovanje"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Mednarodno sodelovanje</span></span></a></li>
+				</ul></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/kontakt"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Kontakt</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/iskalnik"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Iskalnik</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/english"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">English</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" href="/earo-vstop"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">eARO VSTOP</span></span></a></li>
+			</ul>
+		</div>
+				
+	</div>
+					
+				
+					<div class="ms-core-listMenu-verticalBox">
+						
+					</div>
+
+				
+				</div>
+		
+	
+  
+</div>
+</div>
+
+</div>
+<div id="contentBox"
+ aria-live="polite" aria-relevant="all"  role="main">
+  <a id="mainContent" name="mainContent" tabindex="-1"></a>
+  <div id="notificationArea" class="ms-notif-box"></div>
+	<div id="DeltaPageStatusBar">
+	
+		<div id="pageStatusBar"></div>
+	
+</div>
+	<div id="DeltaPlaceHolderMain">
+	
+		
+
+    
+    		
+    <div class="page-content-layout">
+        <div class="container blank">
+            <div class="row single-col">
+                <div class="col layout-single-content">
+                    <div class="ms-webpart-zone ms-fullWidth">
+		<div id="MSOZoneCell_WebPartWPQ2" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+			<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+				<div WebPartID="4a30382c-b174-412e-b3b3-d2dd4fc5c2a6" HasPers="false" id="WebPartWPQ2" width="100%" class="ms-WPBody noindex " allowDelete="false" style="" ><div class="ms-rtestate-field"><h1>Summary C</h1></div><div class="ms-clear"></div></div>
+			</div><div class="ms-PartSpacingVertical"></div>
+		</div><div id="MSOZoneCell_WebPartctl00_ctl42_g_f739e4a8_7cad_4bd6_8c3f_2e40f2fc15e1" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical-inline-table ms-webpart-cell-vertical ms-fullWidth ">
+			<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+				<div WebPartID="f739e4a8-7cad-4bd6-8c3f-2e40f2fc15e1" HasPers="false" id="WebPartctl00_ctl42_g_f739e4a8_7cad_4bd6_8c3f_2e40f2fc15e1" width="100%" class="ms-WPBody noindex " allowDelete="false" allowExport="false" style="" ><div id="ctl00_ctl42_g_f739e4a8_7cad_4bd6_8c3f_2e40f2fc15e1">
+					
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<div id="ctl00_ctl42_g_f739e4a8_7cad_4bd6_8c3f_2e40f2fc15e1_ctl00_PanelNotamSummaryPanel">
+						
+    <div class="kzps-notam-summary-wrapper">
+        <div class="kzps-notam-message">
+            
+        </div>
+        <div class="kzps-notam-file-list">
+        </div>
+        <div class="notam-summary-print">
+            <button type="button" class="btn btn-primary active" onclick="printDialog();">
+                NATISNI
+                <i class="fa fa-print"></i>
+            </button>
+
+        </div>
+        <div class="kzps-notam-results">
+            <div class="kzps-notam-header">
+                <ul><div class="ExternalClass2DDA785036AB4DA1B5BB64FF1A13C0B3"><table class="header-table"><tbody><tr><td><div class="content-split info border"><div class="table-header-title"><p class="data-text tac fsxxl lh36">POVZETEK NOTAM SPOROČIL<br>SERIJE 
+                        <span class="replace-letter-title">A</span><br><span class="replace-time-title">23 APR 2020</span>​<span id="ms-rterangecursor-start"></span><span id="ms-rterangecursor-end"></span><br></p></div><div class="gui-list list-data data-list dib"><div class="list-item">
+                        <span class="data-text text-key">Fax&#58; </span> 
+                        <span class="data-text text-value">+386 4 20 40 095</span> </div><div class="list-item">
+                        <span class="data-text text-key">Phone&#58; </span> 
+                        <span class="data-text text-value">+386 4 20 40 360</span><span class="data-text text-key aftn-position">AFTN&#58; LJLAYNYX</span> </div><div class="list-item">
+                        <span class="data-text text-key">E-mail&#58; </span><a class="data-text data-link text-value">notam@sloveniacontrol.si</a> </div></div></div></td><td><div class="header-img">
+                  <img class="print-logo" src="/en/Notam%20images/logo.png" alt="" /> &#160;</div><div class="content-split info pb0"><p class="data-text fsl">POVZETEK VELJAVNIH NOTAM SPOROČIL</p><p class="data-text b fss">OBJAVLJA SLUŽBA SPOROČIL ZA LETALCE/SLI</p></div></td></tr></tbody></table>​​<br> </div>​<br></ul>                       
+            </div>
+            <div>
+                <span class="summary-text-placeholder">SLEDEČA NOTAM SPOROČILA SERIJE C SO BILA VELJAVNA OB 09:00, 31 OKT. 2023</span><span> UTC</span>
+            </div> 
+            <div class="kzps-notam-messages">
+                <div class="ExternalClass75461904E461462F8588E013A86349DB"><div class="ExternalClass838629A04D054FE99653E9F973F991B3" style="padding-right&#58;140px;"><p>
+            ​Podatki, objavljeni na tej strani so izključno informativne narave. KZPS, d.o.o. ne prevzema
+            odgovornosti za aktualnost, pravilnost ali celovitost na tej strani ponujenih informacij,
+            prav tako ne odgovarja za škodo materialne ali druge narave, ki je posledica uporabe ali neuporabe
+            omenjenih informacij oziroma je posledica pomanjkljivih ali napačnih informacij. Aktualni, pravilni
+            in celoviti podatki za operativno uporabo so na voljo v ARO Slovenija (tel. 042040420) in v sistemu
+            eARO (<a href="http&#58;//fpl-sloveniacontrol.ead-it.com/"><span style="text-decoration&#58;underline;"><font color="#0066cc">http&#58;//fpl-sloveniacontrol.ead-it.com/</font></span></a>),
+            kjer je pred izvedbo poleta potrebno preveriti informacije in objave.
+        </p></div></div>​<span id="ms-rterangecursor-start"></span><span id="ms-rterangecursor-end"></span><br>
+            </div>
+            <div class="kzps-notam-itemslist">
+                <div id="ctl00_ctl42_g_f739e4a8_7cad_4bd6_8c3f_2e40f2fc15e1_ctl00_notam_C" class="kzps-notam-item-series-C">
+							
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1974/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QNLXX/IV/BO/AE/000/999/4529N01337E025</p><p><span class='kzps-notam-item-a'>A) LJPZ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 27.10.2023 16:06&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 31.01.2024 11:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) DOLOČEVALNIK POZICIJE PZ FREKVENCA 388KHZ NE DELUJE.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 16:07:32</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1421/23");'>A1421/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1974-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1972/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QFMAH/IV/BO/A/000/999/4528N01337E005</p><p><span class='kzps-notam-item-a'>A) LJPZ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 01.11.2023 00:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C)  PERM&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) DELOVNI ČAS METEOROLOŠKE SLUŽBE V ZIMSKEM ČASU:<br />PON-NED 0545-1615.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 15:23:21</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1419/23");'>A1419/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1972-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1971/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QFMAH/IV/BO/A/000/999/4629N01541E005</p><p><span class='kzps-notam-item-a'>A) LJMB&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 01.11.2023 00:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C)  PERM&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) DELOVNI ČAS METEOROLOŠKE SLUŽBE V ZIMSKEM ČASU:<br />PON-NED 0545-1615.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 15:19:01</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1418/23");'>A1418/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1971-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1970/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QFFCG/IV/NBO/A/000/999/4554N01532E005</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 03.11.2023 14:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 02.02.2024 14:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) KATEGORIJA GASILSKO-REŠEVALNE SLUŽBE JE ZNIŽANA NA KATEGORIJO 5</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:59:10</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0660/23");'>B0660/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1970-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1969/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QLPAS/IV/BO/A/000/999/4554N01532E005</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 27.10.2023 14:55&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 02.02.2024 14:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) KAZALNIK NATANČNE PRILETNE POTI (PAPI) VPS 09 NE DELUJE.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:57:10</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0659/23");'>B0659/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1969-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1968/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QLPAS/IV/BO/A/000/999/4554N01532E005</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 27.10.2023 14:54&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 02.02.2024 14:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) KAZALNIK NATANČNE PRILETNE POTI NA HELIPORTU NE DELUJE.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:55:30</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0658/23");'>B0658/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1968-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1967/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QOBCE/IV/M/AE/000/007/4554N01531E001</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 27.10.2023 14:52&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 02.02.2024 14:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) MONITORSKA ANTENA STOJI BLIZU PRAGA TRAVNATE VPS 09.<br />KOORDINATE: 455405.00N 0153123.00E<br />VIŠINA: 8M<br />NADMORSKA VIŠINA VRHA OVIRE: 162M AMSL</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:53:20</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0657/23");'>B0657/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1967-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1966/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QMRLC/IV/NBO/A/000/999/4554N01532E005</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 27.10.2023 14:49&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 02.02.2024 14:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) TRAVNATA VPS 09/27 ZAPRTA.<br />VOJAŠKI HELIKOPTERJI SO IZVZETI.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:50:50</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0656/23");'>B0656/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1966-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1965/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QRTCA/IV/BO/W/000/075/4539N01418E002</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 20.11.2023 08:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 23.11.2023 16:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>D) 20 21 22 23 0800-1600</p><p>E) OBMOČJE ZAČASNO OMEJENEGA PROMETA AKTIVIRANO ZNOTRAJ <br />STRANSKIH MEJA LJD1 PIVKA-ILIRSKA BISTRICA.</p><p><span>F) GND</span><span class='kzps-notam-item-b'>G) 7500FT AMSL</span></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:30:29</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1417/23");'>A1417/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1965-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1964/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QRTCA/IV/BO/W/000/075/4539N01418E002</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 13.11.2023 08:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 16.11.2023 16:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>D) 13 14 15 16 0800-1600</p><p>E) OBMOČJE ZAČASNO OMEJENEGA PROMETA AKTIVIRANO ZNOTRAJ <br />STRANSKIH MEJA LJD1 PIVKA-ILIRSKA BISTRICA.</p><p><span>F) GND</span><span class='kzps-notam-item-b'>G) 7500FT AMSL</span></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:27:39</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1416/23");'>A1416/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1964-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1963/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QRRCA/IV/BO/W/000/150/4543N01417E012</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 28.11.2023 10:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 30.11.2023 19:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>D) 28 1000-1700, 29 0700-1700, 30 0700-1900</p><p>E) OBMOČJE OMEJENEGA PROMETA LJR5 PIVKA-ILIRSKA BISTRICA <br />AKTIVIRANO.</p><p><span>F) GND</span><span class='kzps-notam-item-b'>G) FL150</span></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:20:59</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1415/23");'>A1415/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1963-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1962/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QRRCA/IV/BO/W/000/150/4542N01422E009</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 28.11.2023 10:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 30.11.2023 19:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>D) 28 1000-1700, 29 0700-1700, 30 0700-1900</p><p>E) OBMOČJE OMEJENEGA PROMETA LJR4 PIVKA-ILIRSKA BISTRICA <br />AKTIVIRANO.</p><p><span>F) GND</span><span class='kzps-notam-item-b'>G) FL150</span></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:11:39</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1414/23");'>A1414/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1962-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1961/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QRRCA/IV/BO/W/000/100/4542N01422E009</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 20.11.2023 08:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 23.11.2023 16:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>D) 20 21 22 23 0800-1600</p><p>E) OBMOČJE OMEJENEGA PROMETA LJR4 PIVKA-ILIRSKA BISTRICA <br />AKTIVIRANO.</p><p><span>F) GND</span><span class='kzps-notam-item-b'>G) 10000FT AMSL</span></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:08:39</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1413/23");'>A1413/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1961-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1960/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QRRCA/IV/BO/W/000/100/4542N01422E009</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 13.11.2023 08:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 16.11.2023 16:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>D) 13 14 15 16 0800-1600</p><p>E) OBMOČJE OMEJENEGA PROMETA LJR4 PIVKA-ILIRSKA BISTRICA <br />AKTIVIRANO.</p><p><span>F) GND</span><span class='kzps-notam-item-b'>G) 10000FT AMSL</span></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:06:49</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1412/23");'>A1412/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1960-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1959/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QRRCA/IV/BO/W/000/040/4542N01422E009</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 06.11.2023 07:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 10.11.2023 17:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>D) 06 07 08 09 10 0700-1030 1130-1700</p><p>E) OBMOČJE OMEJENEGA PROMETA LJR4 PIVKA-ILIRSKA BISTRICA <br />AKTIVIRANO.</p><p><span>F) GND</span><span class='kzps-notam-item-b'>G) 4000FT AMSL</span></p><p class='notam-hide'>Čas objave: 27. 10. 2023 14:03:39</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1411/23");'>A1411/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1959-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1958/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QFDAS/I/M/A/000/999/4613N01427E005</p><p><span class='kzps-notam-item-a'>A) LJLJ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 27.10.2023 12:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 30.11.2023 22:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) VIZUALNI SISTEM VODENJA LETALA DO PARKIRNEGA PROSTORA <br />NA POZICIJI 5 NE DELUJE. NE UPORABLJAJ AVOTMATSKEGA <br />SISTEMA VODENJA. LETALA VODI PARKIRNI USMERJEVALEC.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 11:11:33</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1410/23");'>A1410/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1958-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1957/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QSTLC/IV/NBO/A/000/999/4554N01532E005</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 30.10.2023 07:30&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 03.11.2023 14:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) LETALIŠKA KONTROLA ZRAČNEGA PROMETA ZAPRTA.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 10:43:42</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0655/23");'>B0655/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1957-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1956/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QSPLC/IV/BO/AE/000/075/4554N01520E020</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 30.10.2023 07:30&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 03.11.2023 14:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) PRILETNA KONTROLA ZRAČNEGA PROMETA CERKLJE ZAPRTA.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 10:34:52</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0654/23");'>B0654/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1956-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1955/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QNMAS/IV/BO/A/000/999/4528N01337E005</p><p><span class='kzps-notam-item-a'>A) LJPZ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 27.10.2023 09:38&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 30.11.2023 13:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) VOR/DME ILB FREKVENCA 114.800MHZ/CH 95X NE DELUJE.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 09:40:10</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1409/23");'>A1409/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1955-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1954/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QNMAS/IV/BO/AE/000/999/4534N01410E025</p><p><span class='kzps-notam-item-a'>A) LJLJ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 27.10.2023 09:28&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 30.11.2023 13:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) VOR/DME ILB FREKVENCA 114.800MHZ/CH 95X NE DELUJE.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 09:30:39</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1408/23");'>A1408/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1954-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1950/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QFPAR/IV/BO/A/000/999/4614N01516E005</p><p><span class='kzps-notam-item-a'>A) LJHC&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 27.10.2023 07:17&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 26.01.2024 12:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) DELOVNI ČAS: H24.<br />POTREBNA PREDHODNA NAJAVA NA TELEFONSKO <br />ŠTEVILKO: +386 30203800 ALI +386 40554892.</p><p></p><p class='notam-hide'>Čas objave: 27. 10. 2023 07:23:14</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0651/23");'>B0651/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1950-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1943/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QLAXX/IV/BO/A/000/999/4613N01427E005</p><p><span class='kzps-notam-item-a'>A) LJLJ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 26.10.2023 14:03&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C)  PERM&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) SISTEM PRILETNIH LUČI VPS 30 ZAMENJAN Z LED LUČMI.<br />GLEJ AIP SLOVENIJA LJLJ AD 2.14.</p><p></p><p class='notam-hide'>Čas objave: 26. 10. 2023 14:05:29</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1398/23");'>A1398/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1943-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1940/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QOBCE/IV/M/AE/000/005/4553N01354E001</p><p><span class='kzps-notam-item-a'>A) LJAJ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 26.10.2023 11:57&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 26.01.2024 12:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) ŽERJAV JE POSTAVLJEN NA LOKACIJI:<br />SREDIŠČE: 455320.79N 0135401.08E (AJDOVŠČINA)<br />RADIJ: 40M<br />VIŠINA: 26M AGL<br />NADMORSKA VIŠINA: 135M AMSL</p><p></p><p class='notam-hide'>Čas objave: 26. 10. 2023 12:00:07</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0650/23");'>B0650/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1940-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1924/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QRTCA/IV/BO/AW/000/034/4616N01423E001</p><p><span class='kzps-notam-item-a'>A) LJLJ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 06.11.2023 08:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 06.11.2023 11:30 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) OBMOČJE ZAČASNO OMEJENEGA PROMETA AKTIVIRANO.<br />SREDIŠČE: 461623N 0142237E (BRDO PRI KRANJU)<br />RADIJ: 1NM<br />VSTOPNI, IZSTOPNI IN TRANZITNI LETI NISO DOVOLJENI.<br />IZJEME SO:<br />- POLICIJSKI HELIKOPTERJI<br />- KOMERCIALNI PROMET<br />- LETI ISKANJA IN REŠEVANJA, NUJNI LETI, LETI NUJNE <br />MEDICINSKE POMOČI IN GASILSKO REŠEVALNI LETI.</p><p><span>F) GND</span><span class='kzps-notam-item-b'>G) 3400FT AMSL</span></p><p class='notam-hide'>Čas objave: 23. 10. 2023 14:43:44</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1384/23");'>A1384/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1924-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1918/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QMRLC/IV/NBO/A/000/999/4628N01507E005</p><p><span class='kzps-notam-item-a'>A) LJSG&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 21.10.2023 07:03&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 16.01.2024 12:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) TRAVNATA VPS 14/32 ZAPRTA ZARADI DEL.</p><p></p><p class='notam-hide'>Čas objave: 21. 10. 2023 07:05:42</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0645/23");'>B0645/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1918-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1916/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QMPLC/IV/BO/A/000/999/4613N01427E005</p><p><span class='kzps-notam-item-a'>A) LJLJ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 20.10.2023 17:38&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 23.12.2023 13:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) PARKIRNA MESTA 13, 13A, 14, 15 IN 15A SO ZAPRTA.</p><p></p><p class='notam-hide'>Čas objave: 20. 10. 2023 17:42:59</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1377/23");'>A1377/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1916-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1913/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QRTCH/IV/BO/AW/014/075/4554N01532E016</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 20.10.2023 11:10&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C)  PERM&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) NOVE LATERALNE MEJE ZRAČNEGA PROSTORA ID GC24 NAJ SE BEREJO:<br />454332N 0151501E -<br />PO FIR MEJI LJUBLJANA / ZAGREB -<br />460905N 0153640E -<br />PO KROŽNEM LOKU S SREDIŠČEM V TOČKI VOR/DME COK IN RADIJEM <br />15.5 NM V OBRATNI SMERI URINEGA KAZALCA -<br />454332N 0151501E<br />GLEJ AIP SUP 001/2023</p><p><span>F) 1000FT AGL</span><span class='kzps-notam-item-b'>G) 7500FT AMSL</span></p><p class='notam-hide'>Čas objave: 20. 10. 2023 11:11:49</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1374/23");'>A1374/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1913-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1906/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QPDAU/I/NBO/A/000/999/4629N01541E005</p><p><span class='kzps-notam-item-a'>A) LJMB&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 19.10.2023 15:54&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 19.11.2023 00:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) STANDARDNI INSTRUMENTALNI ODHOD (SID) PETOV 5D VPS 32 NI <br />NA VOLJO. NE UPORABLJAJ.</p><p></p><p class='notam-hide'>Čas objave: 19. 10. 2023 15:55:59</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1368/23");'>A1368/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1906-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1905/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QPDAU/I/NBO/A/000/999/4629N01541E005</p><p><span class='kzps-notam-item-a'>A) LJMB&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 19.10.2023 15:51&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 19.11.2023 00:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) STANDARDNI INSTRUMENTALNI ODHOD (SID) VALLU 4L VPS 32 NI <br />NA VOLJO. NE UPORABLJAJ.</p><p></p><p class='notam-hide'>Čas objave: 19. 10. 2023 15:53:59</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1367/23");'>A1367/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1905-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1885/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QNXAS/V/BO/AE/000/999/4554N01532E005</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 16.10.2023 13:32&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 16.11.2023 13:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) VISOKOFREKVENČNI DOLOČEVALEC SMERI (VDF) FREKVENCI 118.555 MHZ <br />IN 127.230 MHZ NE DELUJE.</p><p></p><p class='notam-hide'>Čas objave: 16. 10. 2023 13:37:51</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0638/23");'>B0638/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1885-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1882/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QFIAU/IV/NBO/A/000/999/4629N01541E005</p><p><span class='kzps-notam-item-a'>A) LJMB&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 16.10.2023 10:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 16.11.2023 10:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) OPREMA ZA RAZLEDENITEV LETAL NI NA VOLJO.</p><p></p><p class='notam-hide'>Čas objave: 16. 10. 2023 10:01:37</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1350/23");'>A1350/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1882-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1881/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QOBCE/IV/B/AE/000/011/4633N01539E001</p><p><span class='kzps-notam-item-a'>A) LJMB&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 16.10.2023 09:13&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 22.01.2024 12:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) OZNAČEN IN OSVETLJEN ŽERJAV POSTAVLJEN NA LOKACIJI:<br />463307N 0153853E (UKC MARIBOR).<br />VIŠINA OVIRE NAD TERENOM: 51M<br />NADMORSKA VIŠINA VRHA OVIRE: 324M AMSL<br />RADIJ: 61M</p><p></p><p class='notam-hide'>Čas objave: 16. 10. 2023 09:14:46</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1349/23");'>A1349/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1881-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1874/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QOBCE/IV/B/AE/000/012/4603N01431E001</p><p><span class='kzps-notam-item-a'>A) LJHL&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 12.10.2023 12:05&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 12.01.2024 13:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) OZNAČEN IN OSVETLJEN ŽERJAV POSTAVLJEN NA <br />LOKACIJI: 460315.77N 0143116.35E (UKC LJUBLJANA)<br />VIŠINA OVIRE NAD TERENOM: 59.5M<br />NADMORSKA VIŠINA VRHA OVIRE: 348.46M AMSL<br />RADIJ: 61.3M</p><p></p><p class='notam-hide'>Čas objave: 12. 10. 2023 12:10:41</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0634/23");'>B0634/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1874-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1873/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QAFXX/IV/BO/E/000/999/4611N01452E074</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 12.10.2023 10:35&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C)  PERM&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) PRI VNAPREJ DOLOČENEM SEGMENTU ZRAČNEGA PROSTORA PU05-MISLINJA<br />(JADRALNE AKTIVNOSTI) NAJ SE ZGORNJA MEJA BERE 7000FT AMSL <br />NAMESTO 7500FT AMSL.<br />GLEJ AIP SUP 001/2023.</p><p></p><p class='notam-hide'>Čas objave: 12. 10. 2023 10:47:41</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1345/23");'>A1345/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1873-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1851/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QOBCE/IV/B/AE/000/014/4614N01427E001</p><p><span class='kzps-notam-item-a'>A) LJLJ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 12.10.2023 06:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 30.11.2023 16:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) PREMIČNO DVIGALO POSTAVLJENO NA LOKACIJI:<br />SREDIŠČE: 461347.97N 0142720.90E<br />VIŠINA OVIRE NAD TERENOM: 22M AGL<br />NADMORSKA VIŠINA VRHA OVIRE: 404.3M AMSL<br />RADIJ: 10M</p><p></p><p class='notam-hide'>Čas objave: 10. 10. 2023 12:27:23</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1324/23");'>A1324/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1851-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1813/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QMRXX/IV/BO/A/000/999/4613N01427E005</p><p><span class='kzps-notam-item-a'>A) LJLJ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 05.10.2023 06:47&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C)  PERM&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) LJLJ AD 2.12  RUNWAY PHYSICAL CHARACTERISTICS<br />RESA VREDNOSTI NAJ SE BEREJO:<br />VPS 12: 240 X 150 NAMESTO 240 X 280<br />VPS 30: 240 X 150 NAMESTO 220 X 280<br />GLEJ AIP AD 2 LJLJ-8</p><p></p><p class='notam-hide'>Čas objave: 5. 10. 2023 06:50:33</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1299/23");'>A1299/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1813-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1807/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QFPXX/V/B/A/000/999/4614N01516E005</p><p><span class='kzps-notam-item-a'>A) LJHC&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 04.10.2023 09:55&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C)  PERM&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) TELEFONSKA ŠTEVILKA ZA PREDHODNO NAJAVO LETA NAJ SE BERE<br />+386 30 203 800 NAMESTO +386 3 4233 000<br />GLEJ AIP SLOVENIJA, AD 1.4-2</p><p></p><p class='notam-hide'>Čas objave: 4. 10. 2023 10:01:10</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0615/23");'>B0615/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1807-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1783/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QOBCE/IV/B/AE/000/015/4541N01401E001</p><p><span class='kzps-notam-item-a'>A) LJDI&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 01.10.2023 16:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 18.12.2023 16:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) VRHOVI DREVES PREBADAJO PRILETNO RAVNINO VPS 31 Z DESNE STRANI.<br />POZICIJA: 454045.71N 0140031.01E<br />RADIJ: 50M<br />VIŠINA DREVES JE 17M NAD PRAGOM STEZE 31.</p><p></p><p class='notam-hide'>Čas objave: 1. 10. 2023 11:53:32</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0604/23");'>B0604/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1783-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1771/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QFPLN/IV/BO/A/000/999/4630N01505E005</p><p><span class='kzps-notam-item-a'>A) LJHS&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 30.09.2023 06:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 30.12.2023 20:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) HELIPORT SLOVENJ GRADEC ZAPRT MED 2000-0600. V NUJNIH <br />PRIMERIH ODPRT TUDI IZVEN URNIKA PO PREDHODNI NAJAVI <br />NA TELEFON: +386 31759586.</p><p></p><p class='notam-hide'>Čas objave: 29. 09. 2023 11:41:44</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0599/23");'>B0599/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1771-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1770/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QOBCE/IV/M/AE/000/015/4630N01505E001</p><p><span class='kzps-notam-item-a'>A) LJHS&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 30.09.2023 06:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 30.12.2023 20:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) TRIJE OSVETLJENI ŽERJAVI PREBADAJO PRILETNO RAVNINO 250M <br />OD HELIPORTA LJHS.<br />CENTER: 463007.20N 0150521.40E (250M OD LJHS)<br />VIŠINA OVIRE: 30M AGL<br />NADMORSKA VIŠINA VRHA OVIRE: 450M AMSL<br />RADIJ: 30M</p><p></p><p class='notam-hide'>Čas objave: 29. 09. 2023 11:26:34</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0598/23");'>B0598/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1770-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1705/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QWULW/IV/BO/W/000/020/4550N01357E001</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 01.10.2023 08:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 31.12.2023 15:25 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>D) 0800-SS</p><p>E) LETENJE LETALSKIH MODELOV BO POTEKALO NA VZLETIŠČU MD VENTUS <br />VIPAVA.<br />SREDIŠČE: 454940.50N 0135659.71E<br />RADIJ: 400M</p><p><span>F) GND</span><span class='kzps-notam-item-b'>G) 500M AGL</span></p><p class='notam-hide'>Čas objave: 23. 09. 2023 15:55:11</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0566/23");'>B0566/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1705-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1672/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QOBCE/IV/M/AE/000/005/4553N01353E001</p><p><span class='kzps-notam-item-a'>A) LJAJ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 16.09.2023 19:20&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 16.12.2023 12:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) ŽERJAV JE POSTAVLJEN NA LOKACIJI:<br />SREDIŠČE: 455312.00N 0135317.70E (AJDOVŠČINA)<br />RADIJ: 45M<br />VIŠINA: 41M AGL<br />NADMORSKA VIŠINA: 152.4M AMSL</p><p></p><p class='notam-hide'>Čas objave: 16. 09. 2023 19:22:29</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0558/23");'>B0558/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1672-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1658/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QRMTT/IV/BO/W/175/285/4601N01419E032</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 02.11.2023 00:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 15.11.2023 23:59 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) NAPOVED TRAJNE SPREMEMBE - PERM AIRAC AMDT 130/2023 Z <br />VELJAVNOSTJO OD 02 NOV 2023<br />- OBMOČJI ZAČASNO LOČENEGA PROMETA (TSA) LJTSA1 MERYL IN LJTSA2 <br />MERYH VZPOSTAVLJENI<br />- VAROVALNI CONI ZA NAČRTOVANJE POLETOV (FLIGHT PLAN BUFFER <br />ZONES - FBZ) LJTSA1Z IN LJTSA2Z VZPOSTAVLJENI</p><p><span>F) FL175</span><span class='kzps-notam-item-b'>G) FL285</span></p><p class='notam-hide'>Čas objave: 14. 09. 2023 16:00:13</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1194/23");'>A1194/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1658-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1590/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QPUCH/I/BO/A/000/999/4629N01541E005</p><p><span class='kzps-notam-item-a'>A) LJMB&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 05.10.2023 00:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C)  PERM&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) ZGREŠENI PRILET ILS VPS 32 NAVODILO PRI TOČKI OBRAČANJA V <br />TLORISNEM PRIKAZU, AIRAC AMDT A129/05 OCT 2023 CHART LJMB AD <br />2.24.12-1 NAJ SE BERE: AT 1300 (444) OR D1.2 MAR, NAMESTO AT <br />1150 (294) OR D1.2 MAR</p><p></p><p class='notam-hide'>Čas objave: 8. 09. 2023 10:28:17</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1135/23");'>A1135/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1590-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1571/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QAFXX/IV/NBO/E/000/999/4611N01452E999</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 06.09.2023 13:09&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 06.12.2023 12:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) IZOGIBANJE FIR MINSK(UMMW) SE ZAHTEVA OD SLOVENSKIH<br />LETALSKIH PREVOZNIKOV IN VODIJ ZRAKOPLOVOV, ODGOVORNIH ZA<br />STORITEV ZRAČNEGA PREVOZA, KI GA IZVAJAJO IMETNIKI<br />SLOVENSKE OPERATIVNE LICENCE V PRIMERU POGODBENEGA <br />IZVAJANJA STORITEV ZRAČNEGA PREVOZA ALI ČE NASTOPAJO KOT<br />DE FACTO LETALSKI PREVOZNIK ALI ČE IZVAJAJO ZRAČNI PREVOZ <br />NA PODLAGI KOMERCIALNEGA DOGOVORA ALI V PRIMERU LETOV POD <br />SKUPNO OZNAKO IN VSEH LETOV, KI SE IZVAJAJO Z ZRAKOPLOVI S<br />SLOVENSKO REGISTRSKO OZNAKO. <br />TUJIM LETALSKIM PREVOZNIKOM SE MED VHODNIMI LETI V EU<br />SVETUJE IZOGIBANJE BELORUSKEMU FIR MINSK (UMMV).</p><p></p><p class='notam-hide'>Čas objave: 6. 09. 2023 13:11:57</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1125/23");'>A1125/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1571-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1561/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QOBCE/IV/B/AE/000/014/4615N01425E001</p><p><span class='kzps-notam-item-a'>A) LJLJ&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 05.09.2023 12:57&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 06.12.2023 08:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) POSTAVLJEN JE NEOZNAČEN IN NEOSVETLJEN ŽERJAV.<br />KOORDINATE: 461452.04N 0142455.47E (ŠENČUR)<br />VIŠINA: 27.90M<br />NADMORSKA VIŠINA VRHA OVIRE: 436.20M AMSL<br />DELOVNI RADIJ: 50M</p><p></p><p class='notam-hide'>Čas objave: 5. 09. 2023 12:59:04</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1119/23");'>A1119/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1561-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1526/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QAFXX/IV/NBO/E/000/999/4611N01452E999</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 01.09.2023 08:17&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 01.12.2023 23:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) LETI NA LETALIŠČA IN LETI IZ LETALIŠČ V REPUBLIKI SLOVENIJI<br />ALI PRELETI SLOVENSKEGA OZEMLJA (FIR LJUBLJANA) NISO<br />DOVOLJENI LETALOM BELORUSKIH LETALSKIH DRUŽB. PREPOVED<br />PRAV TAKO VELJA ZA VSA LETALA REGISTRIRANA V BELORUSIJI.<br />IZJEME SO LETI LETAL V SILI IN HUMANITARNI LETI.</p><p></p><p class='notam-hide'>Čas objave: 1. 09. 2023 08:20:18</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1098/23");'>A1098/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1526-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1521/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QMXLC/IV/BO/A/000/999/4628N01507E005</p><p><span class='kzps-notam-item-a'>A) LJSG&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 31.08.2023 18:20&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 22.11.2023 12:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) VOZNA STEZA B ZAPRTA.</p><p></p><p class='notam-hide'>Čas objave: 31. 08. 2023 18:20:53</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0511/23");'>B0511/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1521-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1512/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QOBCE/IV/M/A/000/999/4548N01506E005</p><p><span class='kzps-notam-item-a'>A) LJNM&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 31.08.2023 07:06&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 30.11.2023 23:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) VISOKA DREVESA PREBADAJO BOČNO RAVNINO NA VZHODNI IN ZAHODNI<br />STRANI VPS 05/23.</p><p></p><p class='notam-hide'>Čas objave: 31. 08. 2023 07:08:48</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0503/23");'>B0503/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1512-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1471/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QFPAP/IV/BO/A/000/999/4603N01431E005</p><p><span class='kzps-notam-item-a'>A) LJHL&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 25.08.2023 12:43&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 25.11.2023 18:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) ZA PRISTANKE MED 1800-0600 JE POTREBNA PREDHODNA NAJAVA NA <br />TELEFONSKO STEVILKO +38641775397.</p><p></p><p class='notam-hide'>Čas objave: 25. 08. 2023 12:44:03</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0498/23");'>B0498/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1471-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1433/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QAFXX/IV/NBO/E/000/999/4611N01452E999</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 18.08.2023 09:21&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 17.11.2023 23:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) VOJAŠKA INVAZIJA UKRAJINE S STRANI RUSKE FEDERACIJE:<br />VSEM ZRAKOPLOVOM, KI SO REGISTRIRANI V RUSIJI IN VSEM <br />ZRAKOPLOVOM, KI SO V LASTI ALI ZAKUPU ALI UPRAVLJANJU FIZIČNIH <br />ALI PRAVNIH OSEB IZ RUSKE FEDERACIJE IN VSEM OPERATERJEM, KI <br />JIM JE SPRIČEVALO LETALSKEGA PREVOZNIKA (AOC) IZDAL PRISTOJNI <br />ORGAN RUSKE FEDERACIJE JE PREPOVEDAN VSTOP, IZSTOP ALI PRELET <br />SLOVENSKEGA ZRAČNEGA PROSTORA RAZEN ZA HUMANITARNE, SAR IN <br />ENOSMERNE POVRATNE LETE NAJETIH ZRAKOPLOVOV Z DOVOLJENJEM <br />MINISTRSTVA ZA INFRASTRUKTURO TER V PRIMERU PRISTANKA ALI <br />PRELETA V SILI.</p><p></p><p class='notam-hide'>Čas objave: 18. 08. 2023 09:24:06</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1024/23");'>A1024/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1433-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1431/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QAFXX/IV/NBO/E/000/999/4611N01452E999</p><p><span class='kzps-notam-item-a'>A) LJLA&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 18.08.2023 09:06&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 17.11.2023 23:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) VOJAŠKA INVAZIJA UKRAJINE S STRANI RUSKE FEDERACIJE.<br />SLOVENSKI LETALSKI OPERATORJI IN LASTNIKI ZRAKOPLOVOV, KI SO <br />REGISTRIRANI  V SLOVENIJI, NAJ NE VSTOPAJO V FIR KYIV (UKBU), <br />FIR LVIV (UKLV), FIR KYIV (UKBV), FIR DNIPROPETROVSK (UKDV), <br />FIR SIMFEROPOL (UKFV), FIR ODESA (UKOV), FIR ROSTOV (URRV). <br />NAVEDENI OPERATORJI IN LASTNIKI ZRAKOPLOVOV NAJ SE IZOGIBAJO <br />TUDI LETALSKIM OPERACIJAM V ZAŠČITNEM PASU 200 NM OD MEJE <br />UKRAJINA/RUSIJA. OPERACIJE ZNOTRAJ ZRAČNEGA PROSTORA FIR <br />CHISINAU (LUUU) SE LAHKO IZVAJAJO SAMO V SKLADU Z VELJAVNIMI <br />LETALSKIMI PUBLIKACIJAMI, KI JIH IZDA REPUBLIKA MOLDAVIJA. <br />OPERACIJE V FIR MINSK (UMMV) SO PREPOVEDANE V SKLADU Z <br />VARNOSTNIMA DIREKTIVAMA EASA SD-2021-02 IN SD-2021-03. <br />PRED OPERACIJAMI V ZRAČNEM PROSTORU MOSCOW (UUWV) NAJ SE <br />IZVEDETA DODATNA OCENA TVEGANJA IN NAČRTOVANJE LETA.</p><p></p><p class='notam-hide'>Čas objave: 18. 08. 2023 09:09:06</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryA.xml","A1023/23");'>A1023/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1431-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1382/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QPKAW/V/BO/A/000/999/4554N01532E005</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 10.08.2023 13:42&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C)  PERM&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) KROŽENJE ZA LETALA KATEGORIJE C/D/E UKINJENO.<br />GLEJ AIP SLOVENIJA LJCE AD 2.24.13-3.</p><p></p><p class='notam-hide'>Čas objave: 10. 08. 2023 13:45:26</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0475/23");'>B0475/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1382-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1361/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QOBCE/IV/M/AE/000/008/4626N01600E001</p><p><span class='kzps-notam-item-a'>A) LJPT&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 08.08.2023 03:09&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 07.11.2023 12:00 EST&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) VISOKA DREVESA PREBADAJO PRILETNO RAVNINO VPS 29 <br />Z DESNE STRANI. SVETUJEMO PREVIDNOST.<br />SREDIŠČE: 462530.00N 0155947.00E<br />RADIJ: 20M<br />VIŠINA OVIRE NAD TERENOM: 15M AGL<br />NADMORSKA VIŠINA VRHA OVIRE: 228M/748FT</p><p></p><p class='notam-hide'>Čas objave: 8. 08. 2023 03:13:43</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0464/23");'>B0464/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1361-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1341/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QFFCG/IV/NBO/A/000/999/4554N01532E005</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 15.08.2023 13:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 03.11.2023 14:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) KATEGORIJA GASILSKO-REŠEVALNE SLUŽBE JE ZNIŽANA NA KATEGORIJO 5</p><p></p><p class='notam-hide'>Čas objave: 3. 08. 2023 06:13:21</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0453/23");'>B0453/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1341-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="kzps-notam-item-wrapper">
+    <div class="kzps-notam-item">
+        <div class="kzps-notam-item-header">
+            <div class="kzps-notam-item-header-title">
+                <h1>C1340/23</h1>
+                
+            </div>
+        </div>
+        <div class="kzps-notam-item-content">
+            <p>Q) LJLA/QFAHX/IV/NBO/A/000/999/4554N01532E005</p><p><span class='kzps-notam-item-a'>A) LJCE&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-b'>B) 06.08.2023 13:00&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='kzps-notam-item-c'>C) 03.11.2023 14:00 &nbsp;&nbsp;&nbsp;&nbsp;</span></p><p>E) POVEČANO ŠTEVILO PTIC NA LETALIŠČU.<br />SVETUJEMO PREVIDNOST.</p><p></p><p class='notam-hide'>Čas objave: 3. 08. 2023 06:07:50</p><p class='notam-hide'>Povezava: <a href='javascript:displayPopup("/NOTAM/summaryB.xml","B0452/23");'>B0452/23</a></p>
+        </div>
+        <div class="kzps-notam-item-download">
+            <a  href='https://www.sloveniacontrol.si/NOTAM/C1340-23.kml'>Prenesi KML <i class='fa fa-download'></i></a>
+        </div>
+    </div>
+</div>
+
+						</div>
+            </div>
+            <div class="kzps-notam-footer">
+                
+                        <div id='print-footer'><ul>
+                            <li>
+                                <span>AIP SUPPLEMENT</span>
+                                <span>004/2023 EFFECTIVE DATE 08 JUN 2023</span>
+                            </li>
+                            <li>
+                                <span>AIP AMANDMENT</span>
+                                <span>025/2022 EFFECTIVE DATE 07 SEP 22</span>
+                            </li>
+                            <li>
+                                <span>AIRAC AIP AMD</span>
+                                <span>130/2023 EFFECTIVE DATE 02 NOV 23</span>
+                            </li>
+                            <li>
+                                <span>AIRAC AIP SUP</span>
+                                <span>001/2013 EFFECTIVE DATE 04 APR 13</span>
+                            </li>
+                            <li>
+                                <span>AIC INTERNACIONAL</span>
+                                <span>A001/2022 EFFECTIVE DATE 13 OCT 22</span>
+                            </li>
+                            <li>
+                                <span>VALID SUPPLEMENTS</span>
+                                <span id='150C7D18ABC94155B6FE9A2212BCD43F'> 005/2022, 001/2023, 004/2023</span>
+                            </li>
+                        </ul></div>
+                    
+            </div>
+        </div>
+    </div>
+
+					</div>
+<script>
+	function printDialog() {
+		var popupWin = window.open();
+		var printHtml = '';
+		printHtml += '<html><head>';
+		printHtml += "<style>.notam-print-row { font-family: sans-serif; padding: 1rem; border-top: 1px solid #dee2e6; }";
+		printHtml += ".print-title {font-family: sans-serif; padding: 1rem;}";
+		printHtml += ".notam-print-row p {margin:0}";
+		printHtml += ".kzps-notam-header {display: block;}";
+		printHtml += ".kzps-notam-footer {display: block;}";
+		printHtml += "div.border {border-style: dashed; border: 1px solid #dee2e6; padding: 1rem;width: 80%;}";
+        printHtml += ".header-table {border: 2px solid black; padding: 0.5rem;}";
+        printHtml += ".kzps-notam-itemslist .kzps-notam-item-header-title {position: relative;}"
+		printHtml += ".kzps-notam-item-recent {font-size: 8pt; position: absolute; top:0pt; right:15pt;}";
+		//printHtml += ".kzps-notam-item-header, .kzps-notam-item-header-title {width: 100%;}"
+		//printHtml += ".table-header-title { text-align:center; font-size:1.5rem; font-weight:500; }";
+		printHtml += "ul {list-style: none; margin:0; padding:0;}";
+		printHtml += ".header-table {font-size: 8pt;}";
+		printHtml += ".kzps-notam-messages {font-size: 8pt;}";
+		printHtml += ".header-table .table-header-title {font-size: 10pt;}";
+		printHtml += ".kzps-notam-item h1 {font-size: 8pt;}";
+		printHtml += ".kzps-notam-item-content p {font-size: 8pt;}";
+		printHtml += ".kzps-notam-item-download {font-size: 6pt;}";
+		printHtml += ".header-table {width: 100%;font-size: 8pt;}";
+		printHtml += ".header-table td:first-of-type {width: 60%;}";
+		printHtml += ".header-table td {position: relative;}";
+		//printHtml += ".header-table .aftn-position {float: right;margin-right: 1rem;}";
+		printHtml += ".header-table .table-header-title {font-size: 10pt;font-weight: 500;text-align: center;}";
+		printHtml += ".header-table .content-split.pb0 {text-align: right;position: absolute;right: 10pt;bottom: 2pt; font-size: 8pt}";
+		printHtml += ".header-table .content-split.pb0 p {margin-bottom: 5px;}";
+        printHtml += ".header-table .print-logo {position: absolute;top: 20pt;right: 10pt;}";
+		printHtml += ".header-table .print-logo {width: 100px}";
+		printHtml += ".kzps-notam-footer {font-size: 8pt;}";
+		printHtml += ".kzps-notam-footer .upper-head .checklist-d {font-size: 10pt;}";
+		printHtml += ".kzps-notam-footer .upper-head .latest-d {font-size: 12pt;}";
+		printHtml += ".kzps-notam-footer .upper-head .end-d {font-size: 12pt;}";
+		printHtml += ".kzps-notam-footer {padding: 10px 20px;border: 1px solid black;font-size: 10pt;}";
+		printHtml += ".kzps-notam-footer ul {list-style: none;padding: 0;margin: 0;}";
+		printHtml += ".kzps-notam-footer ul li span:first-of-type{display:inline-block;width: 200px;}";
+		printHtml += ".kzps-notam-footer ul li span:nth-of-type(2){display:inline-block;}";
+		printHtml += ".kzps-notam-footer .upper-head .n-wrap-div {border: 2px solid black;font-weight: bold;padding-top: 5px;padding-bottom: 15px;text-align: center;}";
+		printHtml += ".kzps-notam-footer .upper-head .checklist-d {font-size: 6pt;margin-bottom: 5px;font-weight: bold;}";
+		printHtml += ".kzps-notam-footer .upper-head .latest-d {font-size: 8pt;margin-bottom: 5px;padding: 8px 0;}";
+		printHtml += ".kzps-notam-footer .end-d {font-size: 6pt;padding: 5px;font-weight: bold;text-align: center;}";
+		printHtml += ".aftn-position {float: right;}";
+		printHtml += ".notam-hide {display: none;}";
+		printHtml += ".kzps-notam-item-download {display: none;}";
+		printHtml += ".print-logo {float: right; margin-bottom: 200px;}";
+		printHtml += ".notam-print-row:first-child { border-top: 0; padding-top:0; }</style>";
+		printHtml += '</head><body>';
+		printHtml += jQuery(".kzps-notam-results").html();
+		printHtml += '</body></html>';
+		popupWin.document.write(printHtml);
+		popupWin.document.close();
+		popupWin.focus();
+		//Need timeout for loading logo
+		setTimeout(function () {
+			popupWin.print();
+			popupWin.close();
+		}, 500);
+	}
+
+    function generateFooter(generatedTime, validSup) {
+        var parent = document.createElement("div");
+        parent.className = "upper-head";
+        var sDiv = document.createElement("div");
+        sDiv.className = "checklist-d";
+        sDiv.textContent = "CHECKLIST OF AIP SUPPLEMENT IN FORCE";
+
+        var tDiv = document.createElement("div");
+        tDiv.textContent = "THE FOLLOWING AIP SUPPLEMENT WERE STILL IN FORCE AT " + generatedTime;
+        var eDiv = document.createElement("div");
+        eDiv.textContent = validSup;
+
+        var wDiv = document.createElement("div");
+        wDiv.className = "n-wrap-div";
+        wDiv.appendChild(sDiv);
+        wDiv.appendChild(tDiv);
+        wDiv.appendChild(eDiv);
+
+        var lDiv = document.createElement("div");
+        lDiv.className = "latest-d";
+        lDiv.textContent = "LATEST PUBLICATIONS AT " + generatedTime;
+
+        parent.appendChild(wDiv);
+        parent.appendChild(lDiv);
+
+        return parent;
+    }
+
+    function generateEnd() {
+        var d = document.createElement("div");
+        d.className = "end-d";
+        d.textContent = "END";
+
+        return d;
+	}
+
+
+    jQuery(document).ready(function () {
+		jQuery(".notam-summary-print").appendTo(jQuery(".ms-webpart-titleText"));
+		jQuery(".notam-summary-print").css("float", "right");
+        var currentPageTitle = $(document).find("title").text().trim().slice(-1);
+        document.getElementsByClassName("replace-letter-title")[0].textContent = currentPageTitle;
+        var sumT = jQuery('.summary-text-placeholder').text().trim();
+        var dateTime = sumT.substring(sumT.match(/\d/).index, sumT.length);
+        var validSup = jQuery("#150C7D18ABC94155B6FE9A2212BCD43F").text();
+        jQuery(".kzps-notam-footer").prepend(generateFooter(dateTime, validSup));
+        jQuery(".kzps-notam-footer").append(generateEnd());
+        if (dateTime.length > 0) {
+			jQuery(".replace-time-title").text(dateTime.slice(dateTime.length - 12));
+		}
+	});
+</script>
+
+<div id="notamModal" class="kzps-notam-modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="kzps-notam-popupdata"></div>
+    </div>
+</div>
+
+<style>
+    .kzps-notam-header, .kzps-notam-footer {
+        display:none;
+    }
+
+    .kzps-notam-header ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .kzps-notam-messages {
+        font-size: 14px;
+    }
+
+    .header-table {
+		width: 100%;
+        font-size: 16px;
+	}
+
+	.header-table td:first-of-type {
+		width: 50%;
+	}
+
+    .header-table td {
+		position: relative;
+	}
+
+    .header-table .aftn-position {
+        float: right;
+        margin-right: 1rem;
+    }
+
+	.header-table .table-header-title {
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+    .header-table .content-split.pb0 {
+        text-align: right;
+        position: absolute;
+        right: 10pt;
+        bottom: 2pt;
+    }
+
+    .header-table .content-split.pb0 p {
+        margin-bottom: 5px;
+    }
+
+    .header-table .print-logo {
+        position: absolute;
+        top: 20pt;
+        right: 10pt;
+    }
+
+    .kzps-notam-item-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .kzps-notam-item {
+        background-color: #f0f2fd;
+        padding: 10px 20px;
+        position: relative;
+    }
+
+        .kzps-notam-item h1 {
+            Nunito Sans, "Nunito Sans script=latin rev=2";
+            font-size: 14px;
+            font-weight: 900;
+            color: #10101f;
+            margin-bottom: 5px;
+        }
+
+    .kzps-notam-item-recent {
+        font-family: Nunito Sans, "Nunito Sans script=latin rev=2";
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 1.6px;
+        color: #f0f2fd;
+        padding: 2px 7px;
+        text-transform: uppercase;
+        background-color: #00aeef;
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+
+    .kzps-notam-item-content p {
+        font-family: Nunito Sans, "Nunito Sans script=latin rev=2";
+        font-size: 14px;
+        color: #004185;
+        margin-bottom: 5px;
+    }
+
+    .kzps-notam-item-b,
+    .kzps-notam-item-c {
+        margin-left: 20px;
+    }
+
+    .kzps-notam-item-header-title {
+        position: relative;
+    }
+
+    .kzps-notam-item-download {
+        font-family: Nunito Sans, "Nunito Sans script=latin rev=2";
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 12px;
+        padding: 7px 25px;
+        border: 1px solid #646464;
+    }
+
+        .kzps-notam-item-download a:visited,
+        .kzps-notam-item-download a:link,
+        .kzps-notam-item-download a:hover,
+        .kzps-notam-item-download a:active {
+            Nunito Sans, "Nunito Sans script=latin rev=2";
+            color: #646464;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+
+    /* The Modal (background) */
+    .kzps-notam-modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    .kzps-notam-footer {
+        padding: 10px 20px;
+        border: 1px solid black;
+        font-size: 16px;
+    }
+
+    .kzps-notam-footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .kzps-notam-footer ul li span:first-of-type{
+        display:inline-block;
+        width: 200px;
+    }
+
+    .kzps-notam-footer ul li span:nth-of-type(2){
+        display:inline-block;
+    }
+
+    .kzps-notam-footer .upper-head .n-wrap-div {
+        border: 2px solid black;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .kzps-notam-footer .upper-head .checklist-d {
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .kzps-notam-footer .upper-head .latest-d {
+        font-size: 20px;
+        margin-bottom: 5px;
+        padding: 8px 0;
+    }
+
+    .kzps-notam-footer .upper-head .end-d {
+        font-size: 20px;
+        padding: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+
+<script type="text/javascript">
+	var modal = document.getElementById("notamModal");
+
+	// Get the <span> element that closes the modal
+	var span = $(".close");
+
+	// When the user clicks on <span> (x), close the modal
+	span.click(function () {
+		modal.style.display = "none";
+	});
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function (event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+
+	function displayModal() {
+		modal.style.display = "block";
+	}
+
+	function displayNotamItems(elementClass) {
+		jQuery(".kzps-notam-item-series-A").css("display", "none");
+		jQuery(".kzps-notam-item-series-B").css("display", "none");
+		jQuery(".kzps-notam-item-series-C").css("display", "none");
+
+		var summaryDiv = jQuery("." + elementClass);
+		if (jQuery(".kzps-notam-item-series-A").css("display") == "none") {
+			jQuery(".kzps-notam-item-series-A").css("display", "block");
+		}
+		else {
+			jQuery(".kzps-notam-item-series-A").css("display", "none");
+		}
+		//var summaryA = document.getElementsByClassName("kzps-notam-item-series-A");
+		//summaryA[0].style.display = "none";
+		//var summaryB = document.getElementsByClassName("kzps-notam-item-series-B");
+		//summaryB[0].style.display = "none";
+		//var summaryC = document.getElementsByClassName("kzps-notam-item-series-C");
+		//summaryC[0].style.display = "none";
+
+		//var summaryDiv = document.getElementsByClassName(elementClass);
+
+		//if (summaryDiv[0].style.display === "none") {
+		//    summaryDiv[0].style.display = "block";
+		//} else {
+		//    summaryDiv[0].style.display = "none";
+		//}
+	}
+
+	function displayPopup(summaryFileUrl, notamStevilka) {
+		$.ajax({
+			type: "POST",
+			url: _spPageContextInfo.webAbsoluteUrl + "/_layouts/15/Agitavit.KZPS.WebUI/KzpsService.asmx/GetNotamByNumber",
+			data: JSON.stringify({
+				notamSummaryFileUrl: summaryFileUrl,
+				stevilka: notamStevilka
+			}),
+			contentType: "application/json; charset=utf-8",
+			dataType: "json",
+			success: function (data) {
+                var notam = JSON.parse(data.d);
+				$(".kzps-notam-popupdata").empty();
+				$(".kzps-notam-popupdata").append("<div class='kzps-notam-popup-header'>" + notam.Stevilka + "</div>");
+				$(".kzps-notam-popupdata").append("<div>" + notam.Stevilka + "</div>");
+				$(".kzps-notam-popupdata").append("<div>Q) "
+					+ notam.QFir + "/"
+					+ notam.QKoda + "/"
+					+ notam.QPromet + "/"
+					+ notam.QNamen + "/"
+					+ notam.QObmocje + "/"
+					+ notam.QSpodnjaMeja + "/"
+					+ notam.QZgornjaMeja + "/"
+                    + notam.QKoordinata + "</div>");
+
+                //A, B and C
+                var ab = ("<div>"
+                    + "<span class='kzps-notam-item-a'>A) " + notam.Lokacija + "</span>"
+                    + "<span class='kzps-notam-item-b'>B) " + notam.ZacetekTrajanja + "</span>");
+
+                var konecTrajanja = "";
+				if (notam.KonecTrajanja !== null && notam.KonecTrajanja !== "") {
+					konecTrajanja = notam.KonecTrajanja + " ";
+                }
+
+                var oznaka = "";
+				if (notam.OznakaTrajanja !== null && notam.OznakaTrajanja !== "") {
+					oznaka = notam.OznakaTrajanja;
+                }
+				var c = "<span class='kzps-notam-item-c'>C) " + konecTrajanja + oznaka + "</span></div>"
+
+                $(".kzps-notam-popupdata").append(ab + c);
+				if (notam.Urnik !== null && notam.Urnik !== "") {
+					$(".kzps-notam-popupdata").append("<div>D) " + notam.Urnik + "</div>");
+				}
+				//if (notam.OznakaTrajanja !== null && notam.OznakaTrajanja !== "") {
+				//	$(".kzps-notam-popupdata").append("<div>C) " + notam.OznakaTrajanja + "</div>");
+				//}
+				if (notam.Besedilo !== undefined) {
+					$(".kzps-notam-popupdata").append("<div>E) " + notam.Besedilo.replace(/\r\n/g, "<br />") + "</div>");
+                }
+				if (notam.SpodnjaMeja !== undefined && notam.SpodnjaMeja.length > 0) {
+					$(".kzps-notam-popupdata").append("<div>F) " + notam.SpodnjaMeja + "</div>");
+				}
+				if (notam.ZgornjaMeja !== undefined && notam.ZgornjaMeja.length > 0) {
+					$(".kzps-notam-popupdata").append("<div>G) " + notam.ZgornjaMeja + "</div>");
+				}
+				$(".kzps-notam-popupdata").append("<div>Čas objave: " + notam.CasObjave + "</div>");
+				$(".kzps-notam-popupdata").append("<div>Povezava: " + notam.Povezava + "</div>");
+				$(".kzps-notam-popupdata").append("<div><a href='" + notam.KML + "'>KML</a></div>");
+
+				displayModal();
+			},
+			error: function (response) {
+				console.log(response);
+			}
+		});
+	}
+</script>
+
+				</div><div class="ms-clear"></div></div>
+			</div>
+		</div>
+	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<div style='display:none' id='hidZone'><menu class="ms-hide">
+		<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/15/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute(&#39;helpLink&#39;), MenuWebPart.getAttribute(&#39;helpMode&#39;))" text="Pomoč" type="option" style="display:none">
+
+		</ie:menuitem>
+	</menu></div>
+	
+</div>
+</div>
+
+<div class="container footer">
+    <div class="wrapper-box">
+        <div class="row">
+			<div class="col-sm-12 col-md-3">
+				<img id="ctl00_SiteLogoImage2" class="navbar-brand ms-siteicon-img" name="onetidHeadbnnr0" src="/PublishingImages/logo_si.png" alt="Kontrola zračnega prometa Slovenije" />
+			</div>
+			<div class="col-sm-12 col-md-3">
+				<span class="bold">Kontrola Zračnega Prometa Slovenije</span><br />
+				Zgornji Brnik 130n,<br />
+				SI – 4210 Brnik - aerodrom<br />
+				+ 386 4 20 40 000<br />
+				<a href="mailto:info@sloveniacontrol.si">info@sloveniacontrol.si</a>
+			</div>
+			<div class="col-sm-12 col-md-3">
+				<a href="/o-podjetju/osnovni-podatki">Osnovni podatki</a><br />
+				<a href="/za-javnost/objava-podatkov-po-zakonu-o-slovenskem-drzavnem-holdingu-(zsdh-1)">Objava po zakonu SDH</a><br />
+				<a href="/za-javnost/katalog-informacij-javnega-znacaja">Katalog informacij javnega značaja</a><br />
+				<a href="/pravne-informacije">Pravne informacije</a><br />
+				<a href="/za-javnost/politika-zasebnosti">Politika zasebnosti</a><br />
+			</div>
+			<div class="col-sm-12 col-md-3">
+				<span class="bold">Na spletu</span><br />
+				<a class="social-media-icon" href="https://www.facebook.com/sloveniacontrol">
+					<img src="/Style%20Library/Images/facebook.svg" alt="Facebook"/>
+				</a>
+				<a class="social-media-icon" href=" https://www.instagram.com/sloveniacontrol/">
+					<img src="/Style%20Library/Images/instagram.svg" alt="Instagram" />
+				</a>
+			</div>
+        </div>
+    </div>
+</div>
+
+<div id="DeltaFormDigest">
+	
+	
+		<script type="text/javascript">//<![CDATA[
+        var formDigestElement = document.getElementsByName('__REQUESTDIGEST')[0];
+        if (!((formDigestElement == null) || (formDigestElement.tagName.toLowerCase() != 'input') || (formDigestElement.type.toLowerCase() != 'hidden') ||
+            (formDigestElement.value == null) || (formDigestElement.value.length <= 0)))
+        {
+            formDigestElement.value = '0x99B27F439A7A713549811BAFD516394A0282C2B20A2034AD2675F1392C28E3E7C41005E86EA2AD1350F6F76C58CBDB5BAB973ECDF91F24C722811A3497E07704,31 Oct 2023 09:54:22 -0000';_spPageContextInfo.updateFormDigestPageLoaded = new Date();
+        }
+        //]]>
+        </script>
+	
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+		</div>
+<span id="DeltaHelpPanel">
+  <div id = "helppanelCntdiv" class="ms-Help-PanelContainer">
+	
+  </div>
+</span>
+<span id="DeltaPageInstrumentation">
+	
+</span>
+		</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var callBackFrameUrl='/WebResource.axd?d=ZN518hjXftXDr2ftrvpDUAKGzojEm_cCa030oyCGATXcQGgV8jOPRicRtt40sbbywHvka8HRIfJGDKeu4sdJSosyuncB8199bM1gtSfXZ6k1&t=637100898046795651';
+WebForm_InitCallback();var _spFormDigestRefreshInterval = 1440000;function loadMDN2() { EnsureScript('MDN.js', typeof(loadFilterFn), null); }
+function loadMDN1() { ExecuteOrDelayUntilScriptLoaded(loadMDN2, 'sp.ribbon.js'); }
+_spBodyOnLoadFunctionNames.push('loadMDN1');
+function _spNavigateHierarchyEx(nodeDiv, dataSourceId, dataPath, url, listInContext, type, additionalQString) {
+    CoreInvoke('SetAdditionalNavigateHierarchyQString', additionalQString);
+    g_originalSPNavigateFunc(nodeDiv, dataSourceId, dataPath, url, listInContext, type);
+}
+
+g_originalSPNavigateFunc = _spNavigateHierarchy;
+_spNavigateHierarchy = _spNavigateHierarchyEx;
+window.SPThemeUtils && SPThemeUtils.ApplyCurrentTheme(true); IsSPSocialSwitchEnabled = function() { return true; };var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: false,isEditMode: false,allowWebPartAdder: false,listId: "{81c25357-3342-4027-9a99-0b168aee7d7d}",itemId: 14,recycleBinEnabled: true,enableMinorVersioning: true,enableModeration: false,forceCheckout: true,rootFolderUrl: "\u002fStrani",itemPermissions:{High:16,Low:196705}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+};
+function __RegisterWebPartPageCUI() {
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js");}
+_spBodyOnLoadFunctionNames.push("__RegisterWebPartPageCUI");var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';SuiteNavRendering.RenderSuiteNav({top:'suiteBarTop', version:2, dataEndpoint:'Microsoft.SharePoint.Portal.SuiteNavData.GetSuiteNavData', culture:'sl-SI', signInLink:'\u002f_layouts\u002f15\u002fAuthenticate.aspx?Source=\u00252FStrani\u00252FSummary\u00252DC\u00252Easpx', brandingText:'', brandingLogo:'', brandingLogoLink:'', brandingLogoTitle:''});
+
+ExecuteOrDelayUntilScriptLoaded(
+function()
+{
+var initInfo = 
+{
+itemPermMasks: {High:16,Low:196705},
+listPermMasks: {High:16,Low:196705},
+listId: "81c25357-3342-4027-9a99-0b168aee7d7d",
+itemId: 14,
+workflowsAssociated: false,
+editable: false,
+doNotShowProperties: false,
+enableVersioning: true
+};
+SP.Ribbon.DocLibAspxPageComponent.registerWithPageManager(initInfo);
+},
+"sp.ribbon.js");
+var g_disableCheckoutInEditMode = false;
+var _spWebPermMasks = {High:16,Low:196705};function _cUpdSiteLogoImage1(){var myd = null; if (typeof(dataSiteLogoImage1) != 'undefined') {myd = dataSiteLogoImage1;} var myc = document.getElementById('ctl00_PlaceHolderTopNavBar_SiteLogoImage1');_cUpdcSiteLogoImage1(myd, myc);}function _cUpdcSiteLogoImage1(data, ctrl){SiteLogoImagePageUpdate(ctrl, data);}g_spPreFetchKeys.push('sp.core.js');function _cUpdSiteLogoImage2(){var myd = null; if (typeof(dataSiteLogoImage2) != 'undefined') {myd = dataSiteLogoImage2;} var myc = document.getElementById('ctl00_SiteLogoImage2');_cUpdcSiteLogoImage2(myd, myc);}function _cUpdcSiteLogoImage2(data, ctrl){SiteLogoImagePageUpdate(ctrl, data);}
+            ExecuteOrDelayUntilScriptLoaded(
+                function() 
+                {                    
+                    Srch.ScriptApplicationManager.get_current().states = {"webUILanguageName":"sl-SI","webDefaultLanguageName":"sl-SI","QueryDateTimeCulture":1060,"timeZoneOffsetInHours":1,"contextUrl":"https://www.sloveniacontrol.si","contextTitle":"Kontrola zračnega prometa Slovenije","supportedLanguages":[{"id":1025,"label":"arabščina"},{"id":1093,"label":"bangladeščina"},{"id":1026,"label":"bolgarščina"},{"id":1027,"label":"katalonščina"},{"id":2052,"label":"kitajščina (poenostavljena)"},{"id":1028,"label":"kitajščina (tradicionalna)"},{"id":1050,"label":"hrvaščina"},{"id":1029,"label":"češčina"},{"id":1030,"label":"danščina"},{"id":1043,"label":"nizozemščina"},{"id":1033,"label":"angleščina"},{"id":1035,"label":"finščina"},{"id":1036,"label":"francoščina"},{"id":1031,"label":"nemščina"},{"id":1032,"label":"grščina"},{"id":1095,"label":"gudžaratščina"},{"id":1037,"label":"hebrejščina"},{"id":1081,"label":"hindijščina"},{"id":1038,"label":"madžarščina"},{"id":1039,"label":"islandščina"},{"id":1057,"label":"indonezijščina"},{"id":1040,"label":"italijanščina"},{"id":1041,"label":"japonščina"},{"id":1099,"label":"Kannadsko"},{"id":1042,"label":"korejščina"},{"id":1062,"label":"latvijščina"},{"id":1063,"label":"litovščina"},{"id":1086,"label":"malajščina"},{"id":1100,"label":"Malajalamsko"},{"id":1102,"label":"marati"},{"id":1044,"label":"norveščina"},{"id":1045,"label":"poljščina"},{"id":1046,"label":"portugalščina (Brazilija)"},{"id":2070,"label":"portugalščina (Portugalska)"},{"id":1094,"label":"pandžabščina"},{"id":1048,"label":"romunščina"},{"id":1049,"label":"ruščina"},{"id":3098,"label":"srbščina (cirilica)"},{"id":2074,"label":"srbščina (latinica)"},{"id":1051,"label":"slovaščina"},{"id":1060,"label":"slovenščina"},{"id":3082,"label":"španščina (Španija)"},{"id":2058,"label":"španščina (Mehika)"},{"id":1053,"label":"švedščina"},{"id":1097,"label":"tamilščina"},{"id":1098,"label":"teluščina"},{"id":1054,"label":"tajščina"},{"id":1055,"label":"turščina"},{"id":1058,"label":"ukrajinščina"},{"id":1056,"label":"urdujščina"},{"id":1066,"label":"vietnamščina"}],"navigationNodes":[{"id":0,"name":"Tem mestu","url":"~site/_layouts/15/osssearchresults.aspx?u={contexturl}","promptString":"Preišči tem mestu"}],"webUILanguageDirectory":"sl-SI","showAdminDetails":false,"defaultPagesListName":"Strani","isSPFSKU":false,"defaultQueryProperties":{"culture":1060,"uiLanguage":1060,"summaryLength":180,"desiredSnippetLength":90,"enableStemming":true,"enablePhonetic":false,"enableNicknames":false,"trimDuplicates":true,"bypassResultTypes":false,"enableInterleaving":true,"enableQueryRules":true,"processBestBets":true,"enableOrderingHitHighlightedProperty":false,"hitHighlightedMultivaluePropertyLimit":-1,"processPersonalFavorites":true}};
+                    Srch.U.trace(null, 'SerializeToClient', 'ScriptApplicationManager state initialized.');
+                }, 'Search.ClientControls.js');var g_clientIdDeltaPlaceHolderMain = "DeltaPlaceHolderMain";
+var g_clientIdDeltaPlaceHolderPageTitleInTitleArea = "DeltaPlaceHolderPageTitleInTitleArea";
+var g_clientIdDeltaPlaceHolderUtilityContent = "DeltaPlaceHolderUtilityContent";
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+
+var g_commandUIHandlers = {"name":"CommandHandlers","attrs":{},"children":[]};
+
+                    ExecuteOrDelayUntilScriptLoaded(
+                        function() 
+                        {
+                            if ($isNull($find('ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr')))
+                            {
+                                var sb = $create(Srch.SearchBox, {"delayLoadTemplateScripts":true,"initialPrompt":"Preišči tem mestu","messages":[],"navigationNodes":[{"id":0,"name":"Tem mestu","url":"~site/_layouts/15/osssearchresults.aspx?u={contexturl}","promptString":"Preišči tem mestu"}],"queryGroupNames":["MasterPage"],"renderTemplateId":"~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchBox_Compact.js","resultsPageAddress":"~site/_layouts/15/osssearchresults.aspx?u={contexturl}","serverInitialRender":true,"showDataErrors":true,"showNavigation":true,"states":{},"tryInplaceQuery":false}, null, null, $get("ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr"));
+                                sb.activate('Prei\u0161\u010Di tem mestu', 'ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox', 'ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sboxdiv', 'ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_NavButton', 'ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_AutoCompList', 'ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_NavDropdownList', 'ctl00_PlaceHolderTopNavBar_PlaceHolderSearchArea_SmallSearchInputBox1_csr_SearchLink', 'ms-srch-sbprogress', 'ms-srch-sb-prompt ms-helperText');
+                            }
+                        }, 'Search.ClientControls.js');g_QuickLaunchControlIds.push("zz1_V4QuickLaunchMenu");_spBodyOnLoadFunctionNames.push('QuickLaunchInitDroppable'); var g_zz1_V4QuickLaunchMenu = null; function init_zz1_V4QuickLaunchMenu() { if (g_zz1_V4QuickLaunchMenu == null) g_zz1_V4QuickLaunchMenu = $create(SP.UI.AspMenu, null, null, null, $get('zz1_V4QuickLaunchMenu')); } ExecuteOrDelayUntilScriptLoaded(init_zz1_V4QuickLaunchMenu, 'SP.Core.js');
+//]]>
+</script>
+</form>
+	<span id="DeltaPlaceHolderUtilityContent">
+		
+	</span>
+	<script type="text/javascript">// <![CDATA[ 
+
+
+		var g_Workspace = "s4-workspace";
+	// ]]>
+</script>
+</body>
+</html>

@@ -30,7 +30,9 @@ The script uses the following Python libraries:
 
 The script will print NOTAM data for the current day, 3 days, 1 week, or 1 month, including converted altitudes and KML links for visualization. As mentioned earlier, scripts ending with the letter `_G` are built to ignore NOTAMs that are not relevant for paragliding, hang gliding, and drone pilots.
 
-To store NOTAMs in JSON files, set the default value from `False` to `True`:
+- To store NOTAMs in JSON files, set the default value from `False` to `True`:
+- To download KML files from the links in JSON files, set the default value from `False` to `True`:
+- To unzip the KML files, set the default value from `False` to `True`:
 
 ```python
 SAVE_JSON_FILES = False
@@ -46,6 +48,11 @@ For more details, see the [LICENSE](LICENSE) file in this repository.
 ## Disclaimer
 
 Please note that the data displayed by this scraper is obtained from the Slovenia Control website and may be subject to change or inaccuracies. The developers are not responsible for any issues arising from the use of this data.
+
+- `scrapedSiteExample.html` is an example of the website we are scraping. 
+  If you encounter issues or inaccuracies while scraping, 
+  it might be due to changes in the content structure of the Slovenia control website. 
+  Use `scrapedSiteExample.html` for future reference to identify what may have changed.
 
 ---
 

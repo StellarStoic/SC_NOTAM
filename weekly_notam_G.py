@@ -26,8 +26,12 @@ import pytz
 import re
 import os
 import json
+import zipfile
 
-SAVE_JSON_FILES = False  # Set to False if you don't want to save NOTAMS in JSON files
+SAVE_JSON_FILES = True  # Set to False if you don't want to save NOTAMS in JSON files
+DOWNLOAD_KML_FILES = False  # Set to True if you want to download KML files from JSON
+UNZIP_KML_FILES = False # Set to True if you want to unzip KML files
+
 
 # Function to convert feet to meters
 def feet_to_meters(feet):
@@ -209,7 +213,58 @@ else:
 
         # Store the data in a tuple
         notam_data_tuple = (notam_number, q_data, a_data, b_data, c_data, d_data, e_data, f_data, g_data, timestamp, kml_link)
-        
+
+
+        # Function to download and optionally unzip KML files
+        def download_and_unzip_kml_file(kml_link, notam_number):
+            # Create a directory to store KML files if it doesn't exist
+            kml_directory = "KMLs"
+            if not os.path.exists(kml_directory):
+                os.makedirs(kml_directory)
+            
+            # Create a directory to store unzipped KML files if it doesn't exist
+            unzip_directory = "uKMLs"
+            if not os.path.exists(unzip_directory):
+                os.makedirs(unzip_directory)
+
+            # Define the KML file name based on the NOTAM ID
+            kml_filename = f"{notam_number.replace('/', '-')}.kml"  # Replace forward slash with hyphen
+            kml_file_path = os.path.join(kml_directory, kml_filename)
+
+            # Download the KML file
+            response = requests.get(kml_link)
+            if response.status_code == 200:
+                with open(kml_file_path, 'wb') as f:
+                    f.write(response.content)
+                
+                # Only unzip if the UNZIP_KML_FILES flag is set to True
+                if UNZIP_KML_FILES:
+                    # Try to unzip the downloaded KML file
+                    try:
+                        with zipfile.ZipFile(kml_file_path, 'r') as zip_ref:
+                            zip_ref.extractall(unzip_directory)
+
+                        # Rename the extracted KML file to match the NOTAM ID
+                        # Make sure the file exists before renaming
+                        extracted_kml_path = os.path.join(unzip_directory, "wfs-kml.kml")
+                        renamed_kml_path = os.path.join(unzip_directory, f"{notam_number.replace('/', '-')}.kml")
+
+                        # Check if a file with the same name already exists; if so, remove it to make way for the new one
+                        if os.path.exists(renamed_kml_path):
+                            os.remove(renamed_kml_path)
+                            
+                        # Rename the extracted file
+                        if os.path.exists(extracted_kml_path):
+                            os.rename(extracted_kml_path, renamed_kml_path)
+                            
+                    except zipfile.BadZipFile:
+                        print("The file is not a zip file, no need to unzip.")
+                    except Exception as e:
+                        print(f"An error occurred while unzipping the KML file: {e}")
+            else:
+                print(f"Failed to download KML file for NOTAM {notam_number}")
+
+
         # Function to save NOTAM data to a JSON file
         def save_notam_to_json(notam_data_tuple):
             # Create a directory to store NOTAM JSON files if it doesn't exist
@@ -318,7 +373,10 @@ else:
                 
                 # Save the NOTAM data to a JSON file
                 if SAVE_JSON_FILES:
-                    save_notam_to_json(notam_data_tuple) 
+                    save_notam_to_json(notam_data_tuple)
 
+                # Download KML files from the link in JSON file
+                if DOWNLOAD_KML_FILES:
+                    download_and_unzip_kml_file(kml_link, notam_number)
         else:
             print("No NOTAMs. Yay!")
